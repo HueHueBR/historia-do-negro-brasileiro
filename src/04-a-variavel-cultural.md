@@ -197,5 +197,3 @@ institucionalizaram.
 [^11]: BASTIDE, Roger. _As religiões africanas no Brasil_. São
 Paulo, Pioreira, 1971. 2v., v. 1, p. 85.
 
-
-
