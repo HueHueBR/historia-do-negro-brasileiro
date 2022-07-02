@@ -1,0 +1,414 @@
+<!DOCTYPE HTML>
+<html lang="pt-br" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>O negro escravo no Brasil-Colônia - História do Negro Brasileiro</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="00-informacoes.html">Informações do livro</a></li><li class="chapter-item expanded affix "><li class="part-title">História do Negro Brasileiro</li><li class="chapter-item expanded "><a href="01-o-grande-povoador.html"><strong aria-hidden="true">1.</strong> O grande povoador</a></li><li class="chapter-item expanded "><a href="02-o-negro-escravo-no-brasil-colonia.html" class="active"><strong aria-hidden="true">2.</strong> O negro escravo no Brasil-Colônia</a></li><li class="chapter-item expanded "><a href="03-a-quilombagem-como-agente-de-mudanca-social.html"><strong aria-hidden="true">3.</strong> A quilombagem como agente de mudança social</a></li><li class="chapter-item expanded "><a href="04-a-variavel-cultural.html"><strong aria-hidden="true">4.</strong> A variável cultural</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> O negro e sua participação política</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> A decadência da escravidão e a crise do sistema</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> Em busca da cidadania</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> Vocabulário crítico</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.</strong> Bibliografia comentada</div></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">História do Negro Brasileiro</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="o-negro-escravo-no-brasil-colônia"><a class="header" href="#o-negro-escravo-no-brasil-colônia">O negro escravo no Brasil-Colônia</a></h1>
+<p>Esse grande povoador do Brasil que foi o negro, povoou-o,
+porém, em condições desfavorabilíssimas, pois o fez na
+condição de escravo. O auge do escravismo coincide com o auge
+da exportação do açúcar para o mercado internacional. Este
+montante de produção, para que houvesse equilíbrio,
+necessitava externamente de um comprador que o consumisse
+todo e, internamente, de homens que trabalhassem para gerá-lo
+em condições de dar lucros compensadores aos senhores de
+engenho.</p>
+<p>Durante o período do Brasil-Colônia, quando chega ao seu
+explendor a produção açucareira, registra-se também o pico
+da importação de negros escravos. Mas essa produção era
+conseguida através de normas de trabalho estabelecidas pela
+classe senhorial e pelas estruturas de poder da época. E cabe
+perguntar: em que condições os escravos produziam essa
+riqueza?</p>
+<p>As descrições de testemunhas variam, mas a realidade na sua
+essência é uma só: o negro escravo vivia como se fosse um
+animal. Não tinha nenhum direito, e pelas Ordenações do Reino
+podia ser vendido, trocado, castigado, mutilado ou mesmo morto
+sem que ninguém ou nenhuma instituição pudesse intervir a seu
+favor. Era uma propriedade privada, propriedade como qualquer
+outro semovente, como o porco ou o cavalo. Um dos observadores
+dessa época, Antonil, assim descreveu as condições sob as
+quais o escravo negro trabalhava:</p>
+<blockquote>
+<p>No Brasil costumam dizer que para o escravo são necessários
+três pês, a saber: pão, pau e pano. E posto que comecem mal,
+principiando pelo castigo, que é o pau; contudo provera a
+Deus, que tão abundante fosse o comer, e o vestir, como
+muitas vezes é o castigo dado por qualquer cousa pouco
+provada ou levantada; e com instrumentos de muito rigor,
+ainda quando os crimes são certos; de que se não usa nem
+com brutos animais, fazendo algum senhor mais caso de um
+cavalo, que de meia dúzia de escravos; pois o cavalo é
+servido, e tem quem lhe busque capim, tem pano para o suor
+e freio dourado <sup class="footnote-reference"><a href="#1">1</a></sup>.</p>
+</blockquote>
+<h2 id="como-o-escravo-se-alimentava-e-era-castigado"><a class="header" href="#como-o-escravo-se-alimentava-e-era-castigado">Como o escravo se alimentava e era castigado</a></h2>
+<p>A alimentação, por seu turno, não era a de fartura que alguns
+autores descrevem, quando afirma que o negro era o elemento
+mais bem-alimentado do Brasil colonial. Pelo contrário.
+Vilhena, descrevendo o tipo de alimentação do escravo e o
+comportamento dos seus senhores no particular, pinta uma
+situação de calamidade alimentar, pois alguns desses nem
+comida davam aos seus cativos. No final do século SVIII ele
+assim descreve a situação dos escravos no particular:</p>
+<blockquote>
+<p>[...] dever-se-ia de justiça e caridade providenciar sobre
+o bárbaro e cruel e inaudito modo como a maior parte dos
+senhores tratam os desgraçados escravos de trabalho. Tais há
+que não lhes dando sustento algum lhes facultam somente
+trabalharem no domingo ou dia santo em um pedacinho de terr
+a que chamam &quot;roça&quot; para daquele trabalho tirarem seu
+sustento para toda a semana acudindo somente com alguma
+gota de mel, o mais grosseiro, se é tempo de moagem. <sup class="footnote-reference"><a href="#2">2</a></sup></p>
+</blockquote>
+<p>Ainda sobre o mesmo assunto, Ademar Vidal, baseado em uma
+testemunha da época, afirma que</p>
+<blockquote>
+<p>A comida era jogada ao chão. Seminus, os escravos dela se
+apoderavam num salto de gato, comida misturada com areia,
+engolindo tudo sem mastigar porque não havia tempo a esperar
+diante dos mais espertos e mais vorazes. <sup class="footnote-reference"><a href="#3">3</a></sup></p>
+</blockquote>
+<p>A jornada de trabalho era de catorze a dezesseis horas, sob
+a fiscalização do feitor, que não admitia pausa ou distração.
+Quando um escravo era considerado preguiçoso ou insubordinado,
+aí vinham os castigos. O feitor, ou um escravo por ele
+designado, era o executor da sentença. Conforme a falta, havia
+um tipo de punição e de tortura. Mas a imaginação dos
+senhores não tinha limites, e muitos criacam os seus métodos e
+instrumentos de tortura próprios. Mas de modo geral eram esses
+os principais instrumentos de tortura, aviltamento ou
+disciplina de trabalho:</p>
+<table><thead><tr><th>instrumentos de captura e contenção</th><th>instrumentos de suplício</th><th>instrumentos de aviltamento</th></tr></thead><tbody>
+<tr><td>correntes, gonilha ou golilha, gargalheira, tronco, vira-mundo, algemas, <em>machos</em>, cepo, corrente e peia.</td><td>máscaras, anjinhos, bacalhau, palmatória.</td><td>gonilha, libambo, ferro para marcar, placas de ferro com inscrições infamantes.</td></tr>
+</tbody></table>
+<p>Segundo Artur Ramos, a quem vemos o esquema acima:</p>
+<blockquote>
+<p>Esta classificação é evidentemente forçada e tem um
+interesse meramente didático. Os instrumentos de captura
+convertem-se facilmente em instrumentos de suplício, como
+é fácil deduzir-se. As correntes, os troncos, as algemas e
+machos visam principalmente à contenção do escravo, para
+transporte ou para impedir-lhe a fuga. Mas esses
+instrumentos, provocando a imobilidade forçada, tornam-se um
+verdadeiro suplício. Ainda mais: qualquer um dos
+instrumentos de captura ou de suplício tem um aviltamento
+moral. <sup class="footnote-reference"><a href="#4">4</a></sup></p>
+</blockquote>
+<p>Os dois instrumentos de suplício mais usados em o tronco e o
+pelourinho, onde eram aplicadas as penas de açoite. O primeiro
+podemos colocar ocmo símbolo da Justiça privada, e o segundo
+como símbolo da Justiça pública. Mas, de qualquer forma, a
+disciplina de trabalho imposta ao escravo baseava-se na
+violência contra a sua pessoa. Ao escravo fugido encontrado
+em quilombo mandava-se ferrar com um F na testa e em caso de
+reincidência cortavam-lhe uma orelha. <sup class="footnote-reference"><a href="#5">5</a></sup> O justiçamento do
+escravo era na maioria das vezes feito na própria fazenda
+pelo seu senhor, havendo casos de negros enterrados vivos,
+jogados em caldeirões de água ou azeite fervendo, castrados,
+deformados, além dos castigos corriqueiros, como os aplicados
+com a palmatória, o açoite, o vira-mundo, os <em>anjinhos</em>
+(também aplicados pelo capitão-do-mato quando o escravo
+capturado negava-se a informar o nome do seu dono) e muitas
+outras formas de se coagir o negligente ou rebelde.</p>
+<p>Na divisão social do trabalho, noventa por cento ou mais dos
+escravos eram destinados às atividades da agroindústria
+açucareira, atividades nas minas ou fazendas de café. Os
+outros eram os chamaos escravos domésticos.</p>
+<p>Esses escravos, assim distribuídos na hora do trabalho, finda
+a faina cotidiana, eram recolhidos às senzalas, onde se
+amontoavam sem nenhuma condição de higiene ou conforto. Os
+escravos que não eram do eito e do engenho, da faiscação ou
+plantação de café, trabalhavam na casa do senhor como mucamas,
+cozinheiras, cocheiros, carregadores de liteiras,
+transportadores de <em>tigres</em>, limpadores de estrebarias,
+moleques de recado, doceiras, amas-de-leite, parteiras,
+carregadores de lenha e inúmeras outras ocupações que faziam
+funcionar a casa-grande.</p>
+<p>Toda essa população que vivia literalmente excluída de
+qualquer direito político constituía a única fonte produtora
+de bens, sob a coerção extra-econômica que a sua condição de
+semovente permitia. Como vemos, o escravo era o trabalhador
+fundamental de uma economia que exigia uma técnica muito
+complexa, pois não era apenas uma economia extrativa, mas uma
+agroindústria cuja diversificação interna do trabalho era bem
+acentuada.</p>
+<h2 id="-do-eito-para-a-senzala-"><a class="header" href="#-do-eito-para-a-senzala-">... Do eito para a senzala ...</a></h2>
+<p>Antonil assim descreve a sociedade escravista na época do Brasil-Colônia:</p>
+<blockquote>
+<p>Toda a escravatura (que nos maiores engenhos passa o número
+de 150 a 200 peças contando as dos partidos) quer
+mantimentos e fardas, medicamentos, enfermaria e enfermeiro;
+e para isso são necessárias roças de muitas mil covas de
+mandioca. Querem os barcos, velames, cabos, cordas e breu.
+Querem as fornalhas que por sete ou outo meses ardem de dia
+e de noite, muita lenha; e para isto é mister dois barcos
+velejados, para se buscar no portos, indo um atrás do outro
+sem parar, e muito dinheiro para a comprar; os grandes
+matos, os muitos carros, e muitas juntas de boi para se
+trazer. Querem os canaviais também suas barcas, e carros
+com dobradas equipações de bois. Querem enxadas e foices.
+Querem as serrarias machados e serras. Quer a moencia de
+toda a casta de paus de lei sobressalente, e muitos quintais
+de aço e de ferro. Quer a carpintaria madeiras seletas e
+fortes para esteios, vigas aspas e rodas; e pelo menos os
+intrumentos mais usuais, a saber: serras, trados, verrumas,
+compassos, réguas, escopros, enxós, goivas, machados,
+martelos, cantins e junteiras, pregos e plainas. Quer a
+fábrica de açúcar faróis, e caldeiras, tachas e bacias, e 
+outros muitos instrumentos menores, todos de cobre. [...]
+São finalmente necessários, além das senzalas dos escravos e
+além da morada do capelão, feitores, mestre, purgador,
+banqueiro e caixeiro, uma capela decente com seus
+ornamentos, todo o aparelho do altar, e umas casas para o
+senhor de engenho com seu quarto separado paraos hóspedes,
+que no Brasil, falto totalmente de estalagens, são
+contínuos; e o edifício do engenho, forte e espaçoso, com as
+mais oficinas, e a casa de purgar, caixaria, alambique e
+outras cousas, que por miúdas aqui se escusa apontá-las e
+delas não se falará. <sup class="footnote-reference"><a href="#6">6</a></sup></p>
+</blockquote>
+<p>Ese longo período é muito elucidativo, pois mostra, muito bem,
+pelos instrumentos enumerados na primeira parte, como o negro
+escravo atuava em todos os níveis da divisão do trabalho, não
+apenas plantando e/ou colhendo cana, mas participando das
+técnincas e profissões exigidas para a prosperidade e o
+dinamismo dos engenhos. Na segunda parte, por outro lado,
+vemos o grande número de pessoas que se beneficiavam, direta
+ou indiretamente, desse trabalho, com todo um rosário de
+membros parasitários, indo dos funcionários fiscalizadores,
+padres, hóspedes e parentes até especialmente o senhor de
+escravos.</p>
+<p>Neste mundo economicamente fechado, duranteo Brasil-Colônia
+somente quem trabalhava era o negro escravo. O fausto dessa
+economia, que permitia aos senhores importarem seda e vinhos
+da França e o seu comportamento de verdadeiros nababos, tinha
+como único suporte o trabalho da escravaria, que vivia sob as
+formas mais violentas de controle social, num clima de
+terrorismo permanente, ou se rebeleva e fugia para as matas,
+organizando quilombos, onde reencontrava a sua condição
+humana.</p>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>ANTONIL, André João. <em>Cultura e opulências do Brasil.</em> Salvador, Progresso, 1950, p. 55.</p>
+</div>
+<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
+<p>VILHENA, Luís dos Santos. <em>A Bahia no século XVIII.</em> Salvador, Itapoã, 1969. 3v., v. 1, p. 185. Recompilação de notícias soteropolitanas e brasílicas.</p>
+</div>
+<div class="footnote-definition" id="3"><sup class="footnote-definition-label">3</sup>
+<p>VIDAL, Ademar. Costumes e práticas do negro. In: II CONGRESSO AFRO BRASILEIRO  SALVADOR, 1937. <em>O negro no Brasil.</em> São Paulo. Civilização Brasileira. 1940, p. 37.</p>
+</div>
+<div class="footnote-definition" id="4"><sup class="footnote-definition-label">4</sup>
+<p>RAMOS, Artur. <em>A aculturação negra no Brasil.</em> Rio de Janeiro, Nacional, 1942, p. 110.</p>
+</div>
+<div class="footnote-definition" id="5"><sup class="footnote-definition-label">5</sup>
+<p>O texto desse alvará encontra0se em: MOURA, Clóvis. <em>Quilombos; resistência ao escravismo.</em> São Paulo, Ática, 1988, p. 20.</p>
+</div>
+<div class="footnote-definition" id="6"><sup class="footnote-definition-label">6</sup>
+<p>ANTONIL, André João. Op. Cit., p. 18-9.</p>
+</div>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="01-o-grande-povoador.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="03-a-quilombagem-como-agente-de-mudanca-social.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="01-o-grande-povoador.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="03-a-quilombagem-como-agente-de-mudanca-social.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>

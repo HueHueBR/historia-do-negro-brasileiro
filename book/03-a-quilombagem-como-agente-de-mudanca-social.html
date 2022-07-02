@@ -1,0 +1,589 @@
+<!DOCTYPE HTML>
+<html lang="pt-br" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>A quilombagem como agente de mudança social - História do Negro Brasileiro</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="00-informacoes.html">Informações do livro</a></li><li class="chapter-item expanded affix "><li class="part-title">História do Negro Brasileiro</li><li class="chapter-item expanded "><a href="01-o-grande-povoador.html"><strong aria-hidden="true">1.</strong> O grande povoador</a></li><li class="chapter-item expanded "><a href="02-o-negro-escravo-no-brasil-colonia.html"><strong aria-hidden="true">2.</strong> O negro escravo no Brasil-Colônia</a></li><li class="chapter-item expanded "><a href="03-a-quilombagem-como-agente-de-mudanca-social.html" class="active"><strong aria-hidden="true">3.</strong> A quilombagem como agente de mudança social</a></li><li class="chapter-item expanded "><a href="04-a-variavel-cultural.html"><strong aria-hidden="true">4.</strong> A variável cultural</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> O negro e sua participação política</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> A decadência da escravidão e a crise do sistema</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> Em busca da cidadania</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> Vocabulário crítico</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.</strong> Bibliografia comentada</div></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">História do Negro Brasileiro</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="a-quilombagem-como-agente-de-mudança-social"><a class="header" href="#a-quilombagem-como-agente-de-mudança-social">A quilombagem como agente de mudança social</a></h1>
+<p>Entendemos por quilombagem o movimento de rebeldia permanente
+organizado e dirigido pelos próprios escravos que se verificou
+durante o escravismo brasileiro em todo o território nacional.
+Movimento de mudança social provocado, ele foi uma força de
+desgaste significativa ao sistema escravista, solapou as suas
+bases em diversos níveis – econômico, social e militar – e influiu
+poderosamente para que esse tipo de trabalho entrasse em crise e
+fosse sibstituído pelo trabalho livre.</p>
+<p>A sua dinâmica expressava a contradição fundamental da época,
+isto é, aquela que existia entre os escravos e os seus senhores
+e aparecia, em conseqüência disso, em todas as áreas e épocas em
+que o sistema de produção escravista foi estabelecido.</p>
+<p>A quilombagem é um movimento emancipacionista que antecede, em
+muito, o movimento liberal abolicionista; ela tem caráter mais
+radical, sem nenhum elemento de mediação entre o seu comportamento
+dinâmico e os interesses da classe senhorial. Somente a violência,
+por isto, poderá consolidá-la ou destruí-la. De um lado os escravos
+rebeldes; de outro os seus senhores e o aparelho de repressão a
+essa rebeldia.</p>
+<p>O quilombo aparece, assim, como aquele módulo de resistência mais
+representativo (quer pela sua quantidade, quer pela sua
+continuidade histórica) que existiu. Estabelecia uma fronteira
+social, cultural e militar contra o sistema que oprimia o escravo,
+e se constituía numa unidade permanente e mais ou menos estável na
+proporção em que as forças repressivas agiam menos ou mais
+ativamente contra ele. Dessa forma, o quilombo é o centro
+organizacional da quilombagem, embora outros tipos de manifestação
+de rebeldia também se apresentassem, como as guerrilhas e diversas
+outras formas de protesto individuais ou coletivas. Entendemos,
+portanto, por quilombagem uma constelação de movimentos de protesto
+do escravo, tendo como centro organiacional o quilombo, do qual
+partiam ou para ele convergiam e se aliavam as demais formas de
+rebeldia.</p>
+<p>Incluímos, por este motivo, no conceito geral de quilombagem outras
+manifestações de protesto racional e social, como por exemplo as
+insurreições baianas do século XIX que culminaram com a grande
+insurreição de 1835 em Salvador, que tanto pânico provocou entre
+as autoridades, forças militares e membros da população. Isto se
+explica não somente porque esses movimentos emancipacionistas
+escravos se inserem a mesma pauta de reinvidicações dos quilombolas,
+mas também porque esses negros urbanos contavam como aliados os
+escravos refugiados nos diversos quilombos existentes na periferia
+de Salvador. Igualmente deverá ser incluído na quilombagem o
+bandoleirismo quilombola, os exemplos mais destacados são os de João
+Mulungu, em Sergipe, e Lucas da Feira, na Bahia, embora inúmeros
+outros tenham existido durante a escravidão em todo o território
+nacional.</p>
+<p>A quilombagem era, por isto, a manifestação mais importante, que
+expressava a contradição fundamental do regime escravista. Os
+senhores de escravos, por outro lado, não desdenhavam a sua
+importância e se municiavam de recursos (militares, políticos,
+jurídicos e terroristas) para combatê-la. Essa estratégia senhorial
+vai das leis da metrópole aplicadas na Colônia, alvarás e outros
+estatutos repressivos, à formação de milícias de capitães-do-mato,
+confecção e uso de aparelhos de suplício e outras formas de
+repressão não-institucionalizadas mas que se haviam transformado em
+costume.</p>
+<p>Em outro local, por essas razões já havíamos escrito que:</p>
+<blockquote>
+<p>O quilombo foi, incontestavelmente, a unidade básica de
+resistência do escravo. Pequeno ou grande, estável ou de vida
+precária, em qualquer região onde existia a escravidão, lá se
+encontrava ele como elemento de desgaste do regime servil. O
+fenômeno não era atomizado, circunscrito a determinada área
+geográfica, como a dizer que somente em determinados locais, por
+circunstâncias mesológicas favoráveis, ele podia afirmar-se. O
+quilombo aparecia onde quer que a escravidão surgisse. Não era
+simples manifestação tópica. Muitas vees surpreende pela
+capacidade de organização, pela resistência que oferece; destruído
+parcialmente dezenas de vezes e novamente aparecendo em outros
+locais, plantando a sua roça, construindo suas casas,
+reorganizando a sua vida social e estabelecendo novos sistemas de 
+defesa. O quilombo não foi, portanto, apenas um fenômeno
+esporádico. Constituía-se em fato normal da sociedade
+escravista. <sup class="footnote-reference"><a href="#7">1</a></sup></p>
+</blockquote>
+<p>O fenômeno da quilombagem, achamos nós, tem como epicentro o quilombo, mas nele podem ser englobadas todas as manifestações de resistência da parte do escravo.</p>
+<h2 id="a-prática-da-quilombagem"><a class="header" href="#a-prática-da-quilombagem">A prática da quilombagem</a></h2>
+<p>Por esses motivos é um movimento abrangente e radical. Nele se
+incluem não apenas negros fugitivos, mas também índios perseguidos,
+mulatos, curibocas, pessoas perseguidas pela polícia em geral,
+bandoleiros, devedores do fisco, fugitivos do serviço militar,
+mulheres sem profissão, brancos pobres e prostitutas.</p>
+<p>Era um cadinho de perseguidos pelo sistema colonial. Era no quilombo
+ou nas demais manifestações da quilombagem que essa população
+marginalizada se recompunha socialmente. Por tudo isto a quilombagem
+tem uma dimensão nacional, conforme já dissemos. Articula-se
+nacionalmente, desde os primórdios da escravidão, atravessa todo o
+sistema escravista, desarticulando-o constantemente, e assume,
+muitas vezes, aspecto ameaçador para a classe senhorial, como no
+caso da República de Palmares. <sup class="footnote-reference"><a href="#8">2</a></sup></p>
+<p>Não iremos fazer aqui, mais uma vez, um apanhado histórico das
+organizações quilombolas, nem isto seria possível para um só autor
+e nas dimensões deste livro. Vamos apenas mostrar o elenco dos
+principais quilombos conhecidos nos diversos locais nos quais eles
+se manifestaram. <sup class="footnote-reference"><a href="#9">3</a></sup></p>
+<h2 id="principais-quilombos-brasileiros"><a class="header" href="#principais-quilombos-brasileiros">Principais quilombos brasileiros</a></h2>
+<p><em>BAHIA</em></p>
+<ol>
+<li>Quilombo do rio Vermelho</li>
+<li>Quilombo do Urubu</li>
+<li>Quilombos de Jacuípe</li>
+<li>Quilombo de Jaguaribe</li>
+<li>Quilombo de Maragogipe</li>
+<li>Quilombo de Muritiba</li>
+<li>Quilombos de Campos de Cachoeira</li>
+<li>Quilombos de Orobó, Tupim e Andaraí</li>
+<li>Quilombos de Xiquexique</li>
+<li>Quilombo do Buraco do Tatu</li>
+<li>Quilombo de Cachoeira</li>
+<li>Quilombo de Nossa Senhora dos Mares</li>
+<li>Quilombo do Cabula</li>
+<li>Quilombos de Jeremoabo</li>
+<li>Quilombo do rio Salitre</li>
+<li>Quilombo do rio Real</li>
+<li>Quilombo de Inhambupe</li>
+<li>Quilombos de Jacobina até o rio São Francisco</li>
+</ol>
+<p><em>Nota:</em> Stuart B. Schwartz conseguiu listar 35 quilombos na região
+da Bahia entre os séculos XVII, XVIII e XIX.</p>
+<p><em>Fontes:</em> diversas, coordenadas pelo autor. Especialmente:
+<em>PEDREIRA</em>, Pedro Tomás. Os quilombos baianos. <em>Revista Brasileira
+de Geografia.</em> Rio de Janeiro, 1962. 24(4), out./dev. SCHWARTZ,
+Stuart B. Mocambos, quilombos e Palmares; a resistência escrava no
+Brasil colonial. <em>Estudos Econômicos.</em> São Paulo, 1987, n. 1. Número
+especial.</p>
+<p><em>MARANHÃO</em></p>
+<ol>
+<li>Quilombo da lagoa Amarela (Preto Cosme)</li>
+<li>Quilombo do Tiriaçu</li>
+<li>Quilombo de Maracaçumé</li>
+<li>Quilombo de São Benedito do Céu</li>
+<li>Quilombo do Jaraquariquera</li>
+</ol>
+<p><em>Fontes:</em> várias, coordenadas pelo autor.</p>
+<p><em>MATO GROSSO</em></p>
+<ol>
+<li>Quilombo nas vizinhanças do Guaporé</li>
+<li>Quilombo da Carlota (denominado posteriormente Quilombo do
+Piolho)</li>
+<li>Quilombos à margem do rio Piolho</li>
+<li>Quilombo de Pindaituba</li>
+<li>Quilombo do Motuca</li>
+<li>Quilombo de Teresa do Quariterê</li>
+</ol>
+<p><em>Fonte:</em> Correspondência do Conselho Ultramarino, 1777. Códice 246.
+Apud PINTO, Roquete. <em>Rondônia</em>. São Paulo, 1950.</p>
+<p><em>MINAS GERAIS</em></p>
+<ol>
+<li>Quilombo do Ambrósio (Quilombo Grande)</li>
+<li>Quilombo do Campo Grande</li>
+<li>Quilombo do Bambuí</li>
+<li>Quilombo do Andaial</li>
+<li>Quilombo do Careca</li>
+<li>Quilombo do morro de Angola</li>
+<li>Quilombo do Paraíba</li>
+<li>Quilombo do Ibituruna</li>
+<li>Quilombo do Cabaça</li>
+<li>Quilombo de Luanda ou Lapa do Quilombo</li>
+<li>Quilombo do Guinda</li>
+<li>Lapa do Isidoro</li>
+<li>Quilombo do Brumado</li>
+<li>Quilombo do Caraça</li>
+<li>Quilombo do Inficionado</li>
+<li>Quilombos de Suçuí e Paraopeba</li>
+<li>Quilombos da serra de São Bartolomeu</li>
+<li>Quilombos de Marcela</li>
+<li>Quilombos da serra de Marcília</li>
+</ol>
+<p><em>Nota:</em> Carlos Magno Guimarães conseguiu listar 116 quilombos em
+Minas Gerais no século XVIII.</p>
+<p><em>Fontes:</em> diversas, coordenadas pelo autor. Especialmente: COSTA
+FILHO, Miguel. Quilombos. <em>Estudos Sociais</em>, Rio de Janeiro, 1960.
+n. 7, 9, 10. VASCONCELOS, Diogo. <em>História Média de Minas Gerais.</em>
+Belo Horizonte, Imprensa Oficial, 1918. GUIMARÃES, Carlos Magno. Os
+quilombos do século do ouro; Minas Gerais. <em>Estudos Econômicos</em>,
+São Paulo, 1988. 18(2).</p>
+<p><em>PERNAMBUCO</em></p>
+<ol>
+<li>Quilombo do Ibura</li>
+<li>Quilombo de Nazareth</li>
+<li>Quilombo de Catucá (extensão do Cova da Onça)</li>
+<li>Quilombo do Pau Picado</li>
+<li>Quilombo do Malunguinho</li>
+<li>Quilombo de Terra Dura</li>
+<li>Quilombo do Japomim</li>
+<li>Quilombos de Buenos Aires</li>
+<li>Quilombos do Palmar</li>
+<li>Quilombos de Olinda</li>
+<li>Quilombo do subúrbio do engenho Camorim</li>
+<li>Quilombo de Goiana</li>
+<li>Quilombo de Iguaraçu</li>
+</ol>
+<p><em>Fontes:</em> diversas, coordenadas pelo autor. Especialmente: MELO,
+Josemir Camilo de. Quilombos em Pernambuco; século XIX. <em>Revista
+do Arquivo Público.</em> Recife, 1978. n. 31, 32. FREYE, Gilberto.
+<em>Nordeste.</em> Rio de Janeiro, José Olympio, 1937.</p>
+<p><em>PARAÍBA</em></p>
+<ol>
+<li>Quilombo do Cumbe</li>
+<li>Quilombo da serra de Capuaba</li>
+<li>Quilombo de Gramame (Paratuba)</li>
+<li>Quilombo do Livramento</li>
+</ol>
+<p><em>Fonte:</em> PORTO, Valdice Mendonça. <em>Paraíba em preto e branco.</em> João
+Pessoa, s. ed., 1976.</p>
+<p><em>REGIÃO AMAZÔNICA</em></p>
+<ol>
+<li>Amapá: Oiapoque e Calçoene</li>
+<li>Amapá: Mazagão</li>
+<li>Pará: Alenquer (rio Curuá)</li>
+<li>Pará: Óbidos (rio Trombetas e Cuminá)</li>
+<li>Pará: Caxiu e Cupim</li>
+<li>Alcobaça (hoje Tucuruí), Cametá (rio Tocantins)</li>
+<li>Pará: Mocajuba (litorial atlântico do Pará)</li>
+<li>Pará: Gurupi (atual divisa entre o Pará e o Maranhão)</li>
+<li>Maranhão: Turiaçu (rio Maracaçumé)</li>
+<li>Maranhão: Turiaçu (rio Turiaçu)</li>
+<li>Pará: Anajás (lagoa Mocambo, ilha de Marajó)</li>
+<li>Margem do baixo Tocantins: Quilombo de Felipa Maria Aranha</li>
+</ol>
+<p><em>Fonte:</em> SALLES, Vicente. <em>O negro no Pará.</em> Rio de Janeiro,
+FGV/UFPA, 1971.</p>
+<p><em>RIO DE JANEIRO</em></p>
+<ol>
+<li>Quilombo de Manual Congo</li>
+<li>Quilombos às margens do rio Paraíba</li>
+<li>Quilombos na serra dos Órgãos</li>
+<li>Quilombos da região de Inhaúma</li>
+<li>Quilombos dos Campos de Goitacazes</li>
+<li>Quilombo do Leblon</li>
+<li>Quilombo do morro do Desterro</li>
+<li><em>Bastilhas</em> de Campos (quilombos organizados pelos abolicionistas
+daquela cidade)</li>
+</ol>
+<p><em>Fontes:</em> diversas, coordenadas pelo autor.</p>
+<p><em>RIO GRANDE DO SUL</em></p>
+<ol>
+<li>Quilombo do negro Lúcio (ilha dos Marinheiros)</li>
+<li>Quilombo do Arroio</li>
+<li>Quilombo da serra dos Tapes</li>
+<li>Quilombo de Manuel Padeiro</li>
+<li>Quilombo do município de Rio Pardo</li>
+<li>Quilombo na serra do Distrito do Couto</li>
+<li>Quilombo no município de Montenegro (?)</li>
+</ol>
+<p><em>Nota:</em> a interrocação posta depois do quilombo do município de
+Montenegro significa que as fontes informativas não são conclusivas
+quanto à sua existência; o quilombo de Manuel Padeiro é chamado, em
+algumas fontes, de Manual Pedreiro.</p>
+<p><em>Fonte:</em> MAESTRI FILHO, José Mário. <em>O escravo no Rio Grande do
+Sul.</em> Porto Alegre, Escola Superior de Teologia São Lourenço de
+Brindes/EDUCS, 1984.</p>
+<p><em>SANTA CATARINA</em></p>
+<ol>
+<li>Quilombo da Alagoa (Lagoa)</li>
+<li>Quilombo da Enseada do Brito</li>
+<li>Outros quilombos menores &quot;que devem ter dado muito trabalho&quot;</li>
+</ol>
+<p><em>Fonte:</em> PIAZZA, Walter. <em>O escravo numa economia minifundiária.</em>
+São Paulo, Resenha Universitária/UDESC, 1975.</p>
+<p><em>SÃO PAULO</em></p>
+<ol>
+<li>Quilombos dos Campos de Araraquara</li>
+<li>Quilombo da cachoeira do Tambau</li>
+<li>Quilombos à margem do rio Tietê, no caminho de Cuiabá</li>
+<li>Quilombo das cabeceiras do rio Corumateí</li>
+<li>Quilombo de Moji-Guaçu</li>
+<li>Quilombos de Campinas</li>
+<li>Quilombo de Atibaia</li>
+<li>Quilombo de Santos</li>
+<li>Quilombo da Aldeia Pinheiros</li>
+<li>Quilombo de Jundiaí</li>
+<li>Quilombo de Itapetininga</li>
+<li>Quilombo da fazendo de Monjolinho (São Carlos)</li>
+<li>Quilombo de Água Fria</li>
+<li>Quilombo de Piracicaba</li>
+<li>Quilombo de Apiaí (de José de Oliveira)</li>
+<li>Quilombo do Sítio do Forte</li>
+<li>Quilombo do Canguçu</li>
+<li>Quilombo do termo de Parnaíba</li>
+<li>Quilombo da Freguesia de Nazaré</li>
+<li>Quilombo de Sorocaba</li>
+<li>Quilombo do Pai Felipe</li>
+<li>Quilombo do Jabaquara</li>
+</ol>
+<p><em>Fontes:</em> diversas, coordenadas pelo autor.</p>
+<p><em>SERGIPE</em></p>
+<ol>
+<li>Quilombo de Capela</li>
+<li>Quilombo de Itabaiana</li>
+<li>Quilombo de Divina Pastora</li>
+<li>Quilombo de Itaporanga</li>
+<li>Quilombo do Rosário</li>
+<li>Quilombo do Engenho do Brejo</li>
+<li>Quilombo de Laranjeiras</li>
+<li>Quilombo de Vila Nova</li>
+<li>Quilombo de São Cristóvão</li>
+<li>Quilombo de Maroim</li>
+<li>Quilombo de Brejo Grande</li>
+<li>Quilombo de Estância</li>
+<li>Quilombo de Rosário</li>
+<li>Quilombo de Santa Luíza</li>
+<li>Quilombo de Socorro</li>
+<li>Quilombos do rio Contiguiba</li>
+<li>Quilombo do rio Vaza Barris</li>
+</ol>
+<p><em>Fontes:</em> FIGUEIREDO, Ariosvaldo. <em>O negro e a violência do branco.</em>
+Rio de Janeiro, José Álvares, 1977. MOURA, Clóvis. <em>Rebeliões da
+senzala.</em> 4. ed. Porto Alegre, Mercado Aberto, 1988. MOTT,
+Luís R. B. Pardos e pretos em Sergipe (1774-1851).. Separata da
+<em>Revista do Instituto de Estudos Brasileiros</em>, São Paulo, 1976.
+SAMPAIO, Aluysio. Os quilombos do Contiguiba. Seiva, Salvador, 6(1).</p>
+<p>Essa pequena listagem bem demonstra como a quilombagem era um
+fenômeno nacional. Convém salientar que ele não representa, nem
+pela quantidade nem pela extensão geográfica, a sua importância
+social. Os quilombos eram focos de concentração demográfica e,
+ao mesmo tempo, fator de mobilidade social horizontal
+permanente. Podemos ver uma corrente migratória quilombola para
+as fronteiras, especialmente rumo às dos países vizinhos,
+destacando-se, nesse sentido, a que demandava às goianas.
+Esse movimento migratório chegou a impressionar e procuapr
+as autoridades e políticos, tendo Tavares Bastos a ele se
+referido como um <em>elemento de fraqueza militar</em>. Diz ele
+nesse sentido:</p>
+<blockquote>
+<p>O governo oriental na última guerra (1864) expedira
+emissários para sublevarem os escravos do Rio Grande.
+Na Cruz Alta em Taquari e outros lugares houve por isso
+tentativas de insurreição. Muñoz e Apparício, chefes
+orientais, invadindo aquela província proclamaram que
+vinham dar liberdade aos escravos. O último relatório
+do Ministério da Justiça atribui a manejos de alguns
+orientais as tentativas de insurreição em Taim e
+Taquari.</p>
+<p>Além disso, no tempo de paz, a fuga de escravos para os
+territórios vizinhos e outros fatos promovem conflitos
+entre as autoridades e amarguraram algumas de nossas
+questões internacionais. Ainda há pouco, noticia-se
+do Norte a fuga de escravos do alto Amazonas para
+o território do Peru e uma considerável evasão de
+outros do Pará para o território da Guiana Francesa
+ou para o terreno contestado do Amapá. <sup class="footnote-reference"><a href="#10">4</a></sup></p>
+</blockquote>
+<p>Como vemos, os escravos fugidos se acoitavam naqueles
+países onde não havia mais escravidão, criando, em
+conseqüência, vários problemas diplomáticos. Por tudo
+isto, a quilombagem – até hoje estudada como um elemento
+secundário, esporádico ou mesmo irrelevante durante a
+escravidão –, à medida que os cientistas sociais
+avançam nas suas pesquisas, demonstra ter sido um elemtno
+dos mais importantes no desgaste permanente, quer social,
+econômico e militar, no processo de substituir-se o
+trabalho escrevo pelo assalariado.</p>
+<div class="footnote-definition" id="7"><sup class="footnote-definition-label">1</sup>
+<p>MOURA, Clóvis. <em>Rebeliões da senzala.</em> 4. ed. Porto Alegre,
+Mercado Aberto, 1988, p. 103.</p>
+</div>
+<div class="footnote-definition" id="8"><sup class="footnote-definition-label">2</sup>
+<p>Sobre a história e organização interna de Palmares ver:
+MOURA, Clóvis. <em>Quilombos</em>; resistência ao escravismo. São Paulo,
+Ática, 1987, p. 38-63. Idem. <em>Sociologia do negro brasileiro</em>.
+São Paulo, Ática, 1988, p. 159-86. FREITAS, Décio. <em>Palmares</em>; a
+guerra dos escravos. Porto Alegre, Mercado Aberto, 1984, passim.</p>
+</div>
+<div class="footnote-definition" id="9"><sup class="footnote-definition-label">3</sup>
+<p>Fizemos há algum tempo uma listagem dos principais quilombos
+conhecidos no nosso livro <em>Os quilombos e a insurreição negra</em>.
+São Paulo, Brasiliense, 1981. Depois, novas pesquisas nos levaram
+a ampliar a lista primitiva e indicar novas fontes, conforme
+podemos ver.</p>
+</div>
+<div class="footnote-definition" id="10"><sup class="footnote-definition-label">4</sup>
+<p>BASTOS, Tavares. Resposta a uma carta de Chamerovow da
+Antislavery Society. In: CARNEIRO, Edison. <em>Antologia do negro
+brasileiro</em>. Porto Alegre, Globo, 1950, p. 29.</p>
+</div>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="02-o-negro-escravo-no-brasil-colonia.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="04-a-variavel-cultural.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="02-o-negro-escravo-no-brasil-colonia.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="04-a-variavel-cultural.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>

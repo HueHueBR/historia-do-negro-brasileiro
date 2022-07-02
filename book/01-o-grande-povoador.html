@@ -1,0 +1,432 @@
+<!DOCTYPE HTML>
+<html lang="pt-br" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>O grande povoador - História do Negro Brasileiro</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="00-informacoes.html">Informações do livro</a></li><li class="chapter-item expanded affix "><li class="part-title">História do Negro Brasileiro</li><li class="chapter-item expanded "><a href="01-o-grande-povoador.html" class="active"><strong aria-hidden="true">1.</strong> O grande povoador</a></li><li class="chapter-item expanded "><a href="02-o-negro-escravo-no-brasil-colonia.html"><strong aria-hidden="true">2.</strong> O negro escravo no Brasil-Colônia</a></li><li class="chapter-item expanded "><a href="03-a-quilombagem-como-agente-de-mudanca-social.html"><strong aria-hidden="true">3.</strong> A quilombagem como agente de mudança social</a></li><li class="chapter-item expanded "><a href="04-a-variavel-cultural.html"><strong aria-hidden="true">4.</strong> A variável cultural</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> O negro e sua participação política</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> A decadência da escravidão e a crise do sistema</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> Em busca da cidadania</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> Vocabulário crítico</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.</strong> Bibliografia comentada</div></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">História do Negro Brasileiro</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="o-grande-povoador"><a class="header" href="#o-grande-povoador">O grande povoador</a></h1>
+<p>A história do negro no Brasil confunde-se e identifica-se
+com a formação da própria nação brasileira e acompanha a
+sua evolução histórica e social. Trazido como imigrante
+forçado e, mais do que isto, como escravo, o negro africano
+e os seus descendentes contribuíram com todos aqueles
+ingredientes que dinamizaram o trabalho durante quase quatro
+séculos de escravidão. Em todas as áreas do Brasil eles
+construíram a nossa economia em desenvolvimento, mas, por
+outro lado, foram sumariamente excluídos da divisão dessa
+riqueza.</p>
+<p>Entretanto, não foi apenas pelo tarbalho que os negros
+contribuíram para que o Brasil chegasse a ser o que é
+atualmente. Na cultura que aqui se formava, eles replasmaram
+os seus padrões culturais de acordo com as necessidades que
+surgiam. Com isto se autopreservaram, em grande parte, da
+opressão do sistema escravista.</p>
+<p>Esta história começa com a chegada das primeiras levas de
+escravos vindos da África. Isto se dá por volta de 1549,
+quando o primeiro contingente é desembarcado em São Vicente.
+D. João III concedeu autorização a fim de que cada colono
+importasse até 120 africanos para as suas propriedades.
+Muitos desses colonos, no entanto, protestaram contra o
+limite estabelecido pelo rei, pois desejavam importar um
+número bem superior. Por outro lado, alguns historiadores
+acham que bem antes dessa data já haviam entrado negros no
+Brasil. Afirmam mesmo que na nau <em>Bretoa</em>, para aqui enviada
+em 1511 por Fernando de Noronha, já se encontravam negros no
+seu bordo. Essa presença, como vemos, confunde-se com a
+formação da Colônia e, depois, do Império, chegando até
+os nossos dias.</p>
+<p>A consolidação da economia colonial intensificou o tráfico
+de africanos para o Brasil, especialmente para o Nordeste,
+onde um tipo de agroindústria se concentrou e floresceu com
+o cultivo da cana-de-açúcar.</p>
+<p>O negro nessa fase é o grande povoador, aquele que chega em
+ondas sucessivas para preencher os vastos espaços geográficos
+desocupados. Enquanto o Reino vinha para a aventura da
+colonização pensando em um breve regresso, deixando, muitas
+vezes, a família em Portugal, o negro africano sabia que
+a sua viagem era definitiva e que as possibilidades de
+voltar não existiam.</p>
+<h2 id="o-negro-dinamiza-demograficamente-o-brasil"><a class="header" href="#o-negro-dinamiza-demograficamente-o-brasil">O negro dinamiza demograficamente o Brasil</a></h2>
+<p>O primeiro (o branco) ou se instalava no comércio, ou lutava
+para conseguir cartas de sesmaria, terras, finalmente para
+iniciar suas atividades na agricultura. E para a concessão de
+sesmarias exigia-se a posse de escravos. Um cronista da época
+dirá, por isto, que os escravos negros eram as mãos e os pés
+do Brasil.</p>
+<p>Com o deslocamento do eixo econômico da Colônia para o
+Nordeste, para lá também se concentra o fluxo demográfico de
+negros vindos da África. Para avaliarmos o crescimento da
+Colônia com essa entrada permanente de africanos, basta dizer
+que em 1586 as estimativas davam uma população de cerca de
+57000 habitantes – e deste total 25000 eram brancos, 18000
+índios e 14000 negros. Segundo cálculo de Santa Apolônia,
+em 1798, para uma população de 3250000 habitantes, habia um
+total de 1582000 escravos, dos quais 221000 pardos e 1361000
+negros, sem contarmos os negros libertos, que ascendiam a 406000.</p>
+<p>Prosseguindo a chegada de africanos, aumentava o seu peso
+demográfico no total da população brasileira. Para o biênio
+1817-1818, as estimativas de Veloso de Oliveira davam, para um
+total de 3817000 habitantes, a cifra de 1930000 escravos, dos
+quais 202000 pardos e 1361000 negros. Havia, também, uma população
+de negros e pardos livres que chegava a 585000. No século XVIII,
+o qual, segundo o historiador Pandiá Calógeras, foi o de maior
+importação de africanos, a média teria chegado a 55000 entrados
+anualmente. Essa massa populacional negro-africana, embora
+concentrando-se especialmente na região nordestina, se espraiará,
+em maior ou menor quantidade, por todo o terriório nacional.</p>
+<p>Embora não tenhamos possibilidades de estabelecer o número
+exato de africanos importados pelo tráfico, podemos fazer várias
+estimativas. Elas variam muito e há sempre uma tendência de se
+diminuir esse número, em parte por falta de estatísticas e também
+porque muitos historiadores procuram <em>branquear</em> a nossa população.
+Essas discussões sobre o número de africanos entrados no Brasil se
+reacenderam quando se procurou quantificar essa população africana
+escrava, e posteriormente a afro-brasileira, para com isto
+estabelecer-se o padrão do que se poderia chamar o
+<em>homem brasileiro</em>.</p>
+<p>A apuração da nossa realidade étnica excluiria o branco como
+representativo do nosso homem. Daí se procurar subestimar o negro
+no passado e a sua significação atual.</p>
+<p>Essas estimativas variam desde a do historiador Rocha Pombo, que
+calcula em 10000000 o número de negros africanos entrados, às de
+Renato Mendonça, que afirmou ter sido de 4830000. Esse autor, que
+fez os seus cálculos baseado em estatísticas aduaneiras, não
+sabemos apoiados em que critérios, pois desde 1831 o tráfico era
+considerado ilegal, elaborou o segundo quadro:</p>
+<p><strong>NÚMERO DE ESCRAVOS ENTRADOS NO BRASIL (avaliação feita baseada em
+estatísticas aduaneiras)</strong></p>
+<table><thead><tr><th>Período</th><th style="text-align: left">Região</th><th style="text-align: right">Entradas anuais</th><th style="text-align: right">Total ânuo</th><th style="text-align: right">Total da importação</th></tr></thead><tbody>
+<tr><td>século XVI</td><td style="text-align: left">todo o Brasil</td><td style="text-align: right">–</td><td style="text-align: right">–</td><td style="text-align: right">30000</td></tr>
+<tr><td>século XVII</td><td style="text-align: left">Brasil holandês</td><td style="text-align: right">3000</td><td style="text-align: right">8000</td><td style="text-align: right">8000</td></tr>
+<tr><td>século XVIII</td><td style="text-align: left">Pará<br>Recife<br>Bahia<br>Rio de Janeiro</td><td style="text-align: right">600<br>5000<br>8000<br>12000</td><td style="text-align: right">25000</td><td style="text-align: right">2500000</td></tr>
+<tr><td>século XIX (até 1850)</td><td style="text-align: left">Rio de Janeiro</td><td style="text-align: right">20000</td><td style="text-align: right">50000</td><td style="text-align: right">1500000</td></tr>
+<tr><td>durante o tráfico</td><td style="text-align: left">–</td><td style="text-align: right">–</td><td style="text-align: right">–</td><td style="text-align: right">4850000</td></tr>
+</tbody></table>
+<p><em>Fonte: MENDONÇA, Renato. A influência africana no português do Brasil.</em> São Paulo, Nacional, 1935.</p>
+<p>Esses dados, como se pode facilmente compreender, são inexatos
+e/ou incompletos. O problema do contrabando obviamente não
+foi computado como uma variável a ser considerada. Mas o
+certo é que quase 40% do total de africanos retirados do
+Continente Negro durante a existência do tráfico foram
+desembarcados no Brasil. Conforme dissemos, ele se distribuiu
+por todo o território nacional.</p>
+<p>Em 1819, pelas estatísticas de Veloso de Oliveira, assim se
+distribuía a nossa população nacionalmente, segundo o quadro
+apresentado por Calógeras.</p>
+<table><thead><tr><th style="text-align: left">Províncias</th><th style="text-align: right">Livres</th><th style="text-align: right">Escravos</th><th style="text-align: right">Total</th><th style="text-align: center">% de escravos</th></tr></thead><tbody>
+<tr><td style="text-align: left">Amazonas</td><td style="text-align: right">13310</td><td style="text-align: right">6000</td><td style="text-align: right">19350</td><td style="text-align: center">31,6</td></tr>
+<tr><td style="text-align: left">Pará</td><td style="text-align: right">90901</td><td style="text-align: right">33000</td><td style="text-align: right">123901</td><td style="text-align: center">26,6</td></tr>
+<tr><td style="text-align: left">Maranhão</td><td style="text-align: right">66668</td><td style="text-align: right">133332</td><td style="text-align: right">200000</td><td style="text-align: center">66,6</td></tr>
+<tr><td style="text-align: left">Piaui</td><td style="text-align: right">48321</td><td style="text-align: right">12405</td><td style="text-align: right">60726</td><td style="text-align: center">20,3</td></tr>
+<tr><td style="text-align: left">Ceará</td><td style="text-align: right">145731</td><td style="text-align: right">55432</td><td style="text-align: right">201170</td><td style="text-align: center">27,6</td></tr>
+<tr><td style="text-align: left">Rio Grande do Norte</td><td style="text-align: right">61812</td><td style="text-align: right">9109</td><td style="text-align: right">70921</td><td style="text-align: center">12,8</td></tr>
+<tr><td style="text-align: left">Paraíba</td><td style="text-align: right">79725</td><td style="text-align: right">17723</td><td style="text-align: right">96448</td><td style="text-align: center">17,4</td></tr>
+<tr><td style="text-align: left">Pernambuco</td><td style="text-align: right">273832</td><td style="text-align: right">97633</td><td style="text-align: right">371455</td><td style="text-align: center">26,3</td></tr>
+<tr><td style="text-align: left">Alagoas</td><td style="text-align: right">69094</td><td style="text-align: right">42879</td><td style="text-align: right">111973</td><td style="text-align: center">38,3</td></tr>
+<tr><td style="text-align: left">Sergipe</td><td style="text-align: right">88783</td><td style="text-align: right">26213</td><td style="text-align: right">141996</td><td style="text-align: center">22,8</td></tr>
+<tr><td style="text-align: left">Bahia</td><td style="text-align: right">330649</td><td style="text-align: right">147263</td><td style="text-align: right">477912</td><td style="text-align: center">30,8</td></tr>
+<tr><td style="text-align: left">Espírito Santo</td><td style="text-align: right">52573</td><td style="text-align: right">20272</td><td style="text-align: right">72845</td><td style="text-align: center">27,7</td></tr>
+<tr><td style="text-align: left">Rio de Janeiro e a corte</td><td style="text-align: right">363940</td><td style="text-align: right">146060</td><td style="text-align: right">510000</td><td style="text-align: center">23,4</td></tr>
+<tr><td style="text-align: left">São Paulo</td><td style="text-align: right">160656</td><td style="text-align: right">77667</td><td style="text-align: right">238323</td><td style="text-align: center">32,6</td></tr>
+<tr><td style="text-align: left">Paraná</td><td style="text-align: right">49251</td><td style="text-align: right">10191</td><td style="text-align: right">59442</td><td style="text-align: center">17,2</td></tr>
+<tr><td style="text-align: left">Santa Catarina</td><td style="text-align: right">34859</td><td style="text-align: right">9172</td><td style="text-align: right">44031</td><td style="text-align: center">21,9</td></tr>
+<tr><td style="text-align: left">Rio Grande do Sul</td><td style="text-align: right">63927</td><td style="text-align: right">28253</td><td style="text-align: right">92180</td><td style="text-align: center">30,7</td></tr>
+<tr><td style="text-align: left">Minas Gerais</td><td style="text-align: right">463342</td><td style="text-align: right">168543</td><td style="text-align: right">631885</td><td style="text-align: center">26,9</td></tr>
+<tr><td style="text-align: left">Goiás</td><td style="text-align: right">36368</td><td style="text-align: right">26800</td><td style="text-align: right">63168</td><td style="text-align: center">42,5</td></tr>
+<tr><td style="text-align: left">Mato Grosso</td><td style="text-align: right">23216</td><td style="text-align: right">14180</td><td style="text-align: right">37396</td><td style="text-align: center">38,6</td></tr>
+</tbody></table>
+<p><em>Fonte: RAMOS, Artur. Introdução à antropologia brasileira.</em> Rio de Janeiro, Casa do Estudante do Brasil, 1943.</p>
+<h2 id="presença-nacional-do-negro"><a class="header" href="#presença-nacional-do-negro">Presença nacional do negro</a></h2>
+<p>Segundo fica demonstrado por estes dados que refletem a
+distribuição nacional da população negra, esta foi, apesar
+da sua condição de inferioridade econômica e social, a grande
+povoadora do nosso território. E não apenas povoou, mas criou
+pequenas comunidades rurais em todo o território nacional
+atravéis de quilombos, fundando núcleos populacionais, muitos
+dos quais existem até hoje.</p>
+<p>Por ter sido a escravidão um fato de ordem nacional, a
+presença do negro, escravo ou livre, também se espalhou
+nacionalmente. Em 1872, quando a população negra escrava já
+em declínio, os escrqvos constituíam 15,2% da população do
+país, nenhuma região tinha menos de 7% de habitantes escravos
+e a taxa mais alta era de apenas 19,5%. Podemos por esses
+dados ver, de um lado, a expressão nacional da população
+negra escrava e, de outro, a progressiva diminuição dessa
+população percentualmente em relação ao século precedente.
+Convém salientar, porém, que nessa estatística não foi
+computada a população negra livre, o que aumentaria em muito
+esses percentuais.</p>
+<p>Mas o certo é que o negro (quer escravo, quer livre) foi o
+grande povoador do nosso território, empregando o seu trabalho
+desde as charqueadas do Rio Grande do Sul aos ervais do
+Paraná, engenhos e plantações do Nordeste, pecurária na
+Paraíba, atividades extrativas na Região Amazônica e na
+mineração de Goiás e Minas Gerais. O negro não apenas povoou,
+mas ocupou os espaços sociais e econômicos que, através de
+seu trabalho, dinamizavam o Brasil.</p>
+<p>A produção de uma economia colonial, e por isso destinada a
+um mercado externo cada vez maior, era fruto desse trabalho
+negro-escravo. E essa economia, que passa pela produção
+açucareira, pela mineração, produtos tropicais e termina na
+fase do café, é feita pelo engro. No entanto, esse fato não
+contribui em nada para que ele consiga um mínimo dessa renda
+em proveito próprio. Pelo contrário. Toda essa produção é
+enviada para o exterior, e os senhores de escravos ficam com
+todo o lucro da exportação e comercialização.</p>
+<p>Houve, de um lado, uma demanda mundial pelos produtos aqui
+produzidos, mas, de outro, uma impossibilidade estrutural de
+os produtores dessa riqueza participarem e se beneficiarem
+dela.</p>
+<p>Isto ocorreu durante todo o tempo em que perdurou o regime
+escravista. Após 1530, quando se pode falar realmente em
+colonização, com engenhos montados em São Vicente, iremos
+encontrar um dinamismo crescente na produção colonial
+brasileira. No século XVI a nossa produção já era superior
+à América espanhola. Os cronistas quinhentistas mais
+representativos, como Fernão Cardim, Gabriel Soares de Souza
+e o padre Anchieta, avaliam a cifra de 300000 arrobas para
+a produção anual do açúcar brasileiro, o que daria uma renda
+<em>per capita</em> das mais altas do Brasil em todos os tempos. No
+outro século essa produção se duplica. No entanto, como já
+dissemos, a grande população negra escrava não participava da
+divisão dessa riqueza, sendo considerada igual aos animais e
+assim tratada.</p>
+<h2 id="deslocamento-para-as-áreas-de-trabalho"><a class="header" href="#deslocamento-para-as-áreas-de-trabalho">Deslocamento para as áreas de trabalho</a></h2>
+<p>Se isto aconteceu no período da produção açucareira,
+a mesma coisa iremos constatar no período da mineração.
+Minas Gerais desponta e consegue o seu apogeu até o último
+quartel do século XVIII, como uma nova e florescente etapa
+da exportação colonial, a mais importante, segundo as
+autoridades de Portugal.</p>
+<p>O negro é deslocado para preencher os vazios demográficos
+dessa nova faixa de trabalho. Não levas apenas o seu trabalho,
+contudo, mas a sua cultura, ensinando técnicas de metalurgia e
+mineração, aperfeiçõando métodos de trabalho, extraindo o
+ouro, procurando diamantes para proporcionar a riqueza dos
+contratadores e da Coroa portuguesa. O negro escravo em Minas
+Gerais, por questões particulares, sofre as mais violentas
+formas de controle no trabalho, é vigiado diariamente. Quando
+fugira, tinha toda uma milícia de capitães-do-mato para
+persegui-lo. Mesmo assim conseguia extrair do subsolo mineiro
+toda a riqueza que foi enviada para Portugal e se destinava
+ao pagamento da dívida que a metrópole havia contraído com a
+Inglaterra.</p>
+<p>Por outro lado, o decréscimo da população negra escrava depois
+de 1850, quando é extindo o tráfico, deve-se à sua grande
+mortalidade, pois, segundo cálculos confiáveis, a média de
+&quot;vida útil&quot; do escravo era de 7 a 10 anos. Mesmo assim, a sua
+influência povoadora em toda a extensão geográfica do Brasil
+se fez e se faz sentir, conforme demonstram todos os
+recenseamentos que foram feitos, incluindo o último, de 1980.
+O negro foi o grande povoador da nação brasileira durante a
+sua evolução social e histórica.</p>
+<p>Por isto salientamos, aqui, o seu papel como <em>semeador de
+cidades</em>, através da formação de núcleos quilombolas em
+âmbito nacional, tendo-se notícias desses algomerados rebeldes
+desde o Amazonas até o Rio Grande do Sul, conforme veremos
+oportunamente.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="00-informacoes.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="02-o-negro-escravo-no-brasil-colonia.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="00-informacoes.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="02-o-negro-escravo-no-brasil-colonia.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>

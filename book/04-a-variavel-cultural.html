@@ -1,0 +1,385 @@
+<!DOCTYPE HTML>
+<html lang="pt-br" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>A variável cultural - História do Negro Brasileiro</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="00-informacoes.html">Informações do livro</a></li><li class="chapter-item expanded affix "><li class="part-title">História do Negro Brasileiro</li><li class="chapter-item expanded "><a href="01-o-grande-povoador.html"><strong aria-hidden="true">1.</strong> O grande povoador</a></li><li class="chapter-item expanded "><a href="02-o-negro-escravo-no-brasil-colonia.html"><strong aria-hidden="true">2.</strong> O negro escravo no Brasil-Colônia</a></li><li class="chapter-item expanded "><a href="03-a-quilombagem-como-agente-de-mudanca-social.html"><strong aria-hidden="true">3.</strong> A quilombagem como agente de mudança social</a></li><li class="chapter-item expanded "><a href="04-a-variavel-cultural.html" class="active"><strong aria-hidden="true">4.</strong> A variável cultural</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> O negro e sua participação política</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> A decadência da escravidão e a crise do sistema</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> Em busca da cidadania</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> Vocabulário crítico</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.</strong> Bibliografia comentada</div></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">História do Negro Brasileiro</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="a-variável-cultural"><a class="header" href="#a-variável-cultural">A variável cultural</a></h1>
+<p>Mas o negro não apenas povoou o Brasil e deu-lhe prosperidade
+econômica através do seu trabalho. Trouxe, também, as suas culturas
+que deram o <em>ethos</em> fundamental da cultura brasileira.</p>
+<p>Vindo de várias partes da África, os negros escravos trouxeram as
+suas diversas matrizes culturais que aqui sobreviveram e serviram
+como patamares de resistência social ao regime que os oprimia e
+queria transformá-los apenas em máquinas de trabalho. Em todas as
+áreas de trabalho os africanos incorporavam os seus modos de vida –
+a sua religião, indumentária, cozinha, música, sistemas de regadio
+e plantação e outras manifestações sociais – àqueles habitantes mais
+antigos do nosso território, índios e portugueses.</p>
+<p>Com a instalação de um governo despótico escravista, capaz de manter
+a ordem contra as manifestações da quilombagem, as suas diversas
+culturas foram consideradas <em>primitivas</em>, exóticas e somente
+consentidas enquanto estivessem sob o controle do aparelho
+dominador. A exteriorização desses traços culturais somente era
+permitida como tática de dominação social, isto é, enquanto os
+negros permanecessem usando-as como manifestações de uma classe
+dominada. Toda a estrutura desse controle cultural, nas suas
+diversas gradações, foi racionalizada para que os padrões dessas
+diversas culturas africanas fossem considerados inferiores.</p>
+<p>Por outro lado, dentro do contexto colonial-escravista as religiões
+africanas eram consideradas especialmente exóticas e, ao mesmo
+tempo, perigosas. Isto acontecia, em primeiro lugar, em decorrência
+do monopólio da Igreja Católica nesse nível, pois somente os seus
+preceitos de explicação do sobrenatural eram considerados
+verdadeiros. Em segundo, a religião que detinha o monopólio da
+explicação do sobrenatural tinha poderes, também, de explicar o
+natural. Daí porque a Igreja Católica procurou, através daquilo que
+foi chamado posteriormente de <em>sincretismo</em>, penetrar e desarticular
+o mundo religioso do africano escravizado, usando o método
+catequista, batizando-o coercivamente, num trabalho de
+<em>cristinização</em> que nada mais era do que tentativas, via estruturas
+de poder, de monopolizar o sagrado e influir poderosamente no plano
+social e político. Esse <em>sincretismo</em>, por isto mesmo, era
+unilateral. Era um sincretismo de uma só via. A Igreja Católica
+somente permitia esse chamado processo sincrético de cima para
+baixo, jamais permitindo a <em>contaminação</em> dos seus princípios
+teológicos pelas posições <em>animistas</em>, <em>fetichistas</em>, e por isso
+mesmo primitivas, das religiões dominadas. Com esse sincretismo de
+uma só via acreditava-se que, dentro de pouco tempo, essas religiões
+desapareceriam no bojo de um <em>catolicismo popular</em>, o qual seria
+anexado ao corpo da Igreja Católica.</p>
+<h2 id="cultura-de-resistência"><a class="header" href="#cultura-de-resistência">Cultura de resistência</a></h2>
+<p>No entanto, durante a escravidão o negro transformou não apenas a
+sua religião, mas todos os padrões das suas culturas em uma cultura
+de resistência social. Essa cultura de resistência, que parece se
+amalgamar no seio da cultura dominante, no entanto desempenhou
+durante a escravidão (como desempenha até hoje) um papel de
+resistência social que muitas vezes escapa aos seus próprios
+agentes, uma função de resguardo contra a cultura dos opressores.</p>
+<p>Toda uma literatura, por essas razões, foi arquitetada e continua
+funcionando no sentido de mostrar que as religiões africanas, e
+posteriormente as afro-brasileiras, são inferiores, no máximo
+consentidas por munificência dos senhores, durante a escravidão, e
+dos aparelhos de poder das classes dominantes, após a Abolição.</p>
+<p>A mesma coisa aconteceu com seus instrumentos rituais, que passaram
+a ser <em>instrumentos típicos</em>, com as suas manifestações musicais,
+sua música, indumentária africana, a cozinha sagrada dos candomblés.
+Tudo isso passou a ser simplesmente <em>folclore</em>. E com isto
+subalternizou-se o mundo cultural dos africanos e dos seus
+descendentes. A dominação cultural acompanhou a dominação social e
+econômica. O sistema de controle social passou a dominar todas as
+manifestações culturais negras, que tivem, em contrapartida, de
+criar mecanismos de defesa contra a cultura dominadora.</p>
+<p>Sempre a defesa do dominado, do oprimido, do discriminado é ambígua.
+Aquele que não pode atacar frontalmente procura formas simbólicas ou
+alternativas para oferecer resistência a essas forças mais poderoas.
+Dessa forma o <em>sincretismo</em> assim chamado não foi a incorporação do
+mundo religioso do negro à religião dominadora, mas, pelo contrário,
+uma forma sutil de camuflar internamente os seus deuses para
+preservá-los da imposição da religião católica.</p>
+<p>O conceito mais abrangente de <em>aculturação</em>, por seu turno, procurou
+explicar o comportamento atual do negro como sendo fruto do contato
+contínuo entre o dominador e o dominado, desejando o primeiro impor
+os seus padrões culturais e o segundo, imitá-los e absorvê-los.</p>
+<p>O sistema escravista, pelos métodos de repressão que os seus
+representantes praticavam, repeliu os valores das culturas
+dominadas. Em contrapartida, os seus adeptos procuravam
+disfarçá-los, fazê-los aparecer sob outras formas, mas sempre
+mantendo o seu significado simbólico inicial. Não havia como fugir à
+religião oficial, num tempo em que existia o monopólio do poder
+político e o monopólio do poder religioso, pela classe senhorial e a
+Igreja Católica respectivamente. Daí o mecanismo de defesa
+sincrético dos negros.</p>
+<p>A mesma coisa aconteceu com as suas línguas. Não possuindo unidade
+lingüística, os africanos foram obrigados a criar uma que fosse
+comum para que se pudessem entender. Os povos banto que chegaram em
+primeiro lugar e aqueles que habitavam a parte sudanesa da África,
+posteriormente, incorporaram ao nosso léxico milhares de vocábulos
+na estrutura do português. No entanto, ninguém, ou quase ninguém,
+viu essa incorporação como um fator de enriquecimento, mas, muito
+pelo contrário, criou-se a palavra <em>chulo</em> para designar esses
+vocabulários. A mesma coisa podemos dizer da indumentária, que
+passou a ser considerada roupa típica; da cozinha, da música, da
+arquitetura. Todos esses elementos culturais africanos foram
+classificados como cultura rústica, folclore. Somente a cultura
+ocidental-cristã tinha o direito de manipular os aparelhos de
+dominação cultural. Com isto, as manifestações culturais das
+populações oprimidas, as afro-brasileiras em particular, foram
+consideradas como elementos marginais à elaboração do <em>ethos</em>
+nacional.</p>
+<h2 id="autodefesa-da-cultura-oprimida"><a class="header" href="#autodefesa-da-cultura-oprimida">Autodefesa da cultura oprimida</a></h2>
+<p>As culturas africanas, durante a escravidão, e a dos
+afro-brasileiros, dpeois, diante dessa manobra asfixiadora da
+classe senhorial e do seu aparelho ideológico, passaram a
+desempenhar a função de instrumento de autodefesa dos oprimidos
+social e economicamente. Durante a quilombagem os negros rebeldes
+encontravam em alguns dos seus padrões culturais elementos de
+proteção social.</p>
+<p>No que concerne às religiões africanas, ou afro-brasileiras por
+extensão, à sua evolução/transformação no contexto e à sua função
+social nesse contexto novo, Roger Bastide escreve:</p>
+<blockquote>
+<p>Apesar das condições adversas da escravidão, misturando as etnias,
+fragmentando as estruturas sociais nativas, impondo aos negros
+novo ritmo de trabalho e novas condições de vida, as religiões
+transportadas do outro lado do Atlântico não estão mortas. Vieira
+exprimia bem esta posição entre a sociedade, dominada e regulada
+pelas normas portuguesas, e as civilizações, vindas da África,
+escrevendo que o Brasil &quot;tem o corpo (europeu) na América e a
+alma da África&quot;. Mas as crenças que permanecem confinadas nos
+segredos dos corações, que se exprimem em ritos e cerimônias, nem
+tomam formas coletivas de organização, estão fatalmente condenadas
+à morte. A religião, ou religiões afro-brasileiras foram obrigadas
+a procurar nas estruturas sociais que lhes eram impostas,
+&quot;nichos&quot;, por assim dizer, onde pudessem se integrar e se
+desenvolver. Deviam se adaptar a novo meio humano, e nesta
+adaptação não se iria processar nem profundas transformações da
+própria vida religiosa. Tornava-se necessário encontrar entre as
+superestruturas – outrora em conexão com a família, com a aldeia,
+com a tribo – e as novas infra-estruturas – a grande platação ou
+centro urbano, a escravidão e a sociedade de castas hierarquizadas
+dominada pelos senhores brancos – laços ignorados, formas de
+passagem inéditas, encarnando-se no corpo social, e este, por sua
+vez, deixando-se penetrar por esses valores diferentes, como
+modelos ou normas. <sup class="footnote-reference"><a href="#11">1</a></sup></p>
+</blockquote>
+<p>O que Bastide demonstra, no trecho acima, é que as culturas negras
+dominadas usaram de diversas estratégias de preservação dos seus
+valores dentro do contexto social escravista, onde estavam
+engastas, ou, em outras palavras, criaram mecanismos de defesa
+contra a escravidão e os seus valores, a partir dos seus próprios
+valores e padrões culturais. Tanto as culturas banto como as
+sudanesas que para aqui vieram tinham isto em comum:
+transformaram-se em anteparos de resistência do escravo na situação
+especial na qual os seus membros se encontravam. Houve, por isto,
+uma substituição de função desses padrões culturais, especialmente
+das suas religiões. O escravo resistia com as armas de que dispunha,
+e as suas culturas desempenharam um papel muitas vezes apenas
+simbólico, outras vezes como veículo ideológico de luta na sociedade
+escravista.</p>
+<p>Após a escravidão, os grupos negros que se organizaram como
+específicos, na sociedade de capitalismo dependente que a
+substituiu, também aproveitaram os valores culturais
+afro-brasileiros como instrumentos de resistência.</p>
+<p>Isto não quer dizer que se conservassem puros, pois sofrem a
+influência <em>aculturativa</em> (isto é, <em>branqueadora</em>) do aparelho
+ideológico dominante. É uma luta ideológico-cultural que se trava
+em todos os níveis, ainda diante dos nossos olhos. O exemplo das
+escolas de samba, especialmente no Rio de Janeiro – que perderam a
+sua especificidade de protesto simbólico espontâneo de antigamente
+para se institucionalizarem, assumindo proporções d eum colossalismo
+quantitativo e competitivo antipopular e subordinando-se a
+instituições ou grupos financiadores que as despersonalizam inteira
+ou parcialmente do seu papel inicial –, exemplifica o que estamos
+afirmando.</p>
+<p>Mesmo quando a temática é eventualmente de protesto, ela está
+subordinada a uma concessão ideológica, implícita ou explícita, dos
+grupos que as dirigem, orientam e patrocinam.</p>
+<p>Por outro lado, a dinâmica interna desses grupos encontra
+combustível ideológico para reagir e criar novos grupos que se
+articulam dentro de padrões afro-brasileiros independentes e
+reiniciam a trajetória abandonada pelos grupos negros que se
+institucionalizaram.</p>
+<div class="footnote-definition" id="11"><sup class="footnote-definition-label">1</sup>
+<p>BASTIDE, Roger. <em>As religiões africanas no Brasil</em>. São
+Paulo, Pioreira, 1971. 2v., v. 1, p. 85.</p>
+</div>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="03-a-quilombagem-como-agente-de-mudanca-social.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="03-a-quilombagem-como-agente-de-mudanca-social.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
