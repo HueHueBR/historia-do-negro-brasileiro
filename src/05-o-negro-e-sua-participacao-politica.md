@@ -211,11 +211,13 @@ Gonçalo de Oliveira, pardo forro; José Francisco de Paulo, pardo
 livre; Félix Martins dos Santos, pardo; além de brancos e pessoas de
 outros estratos sociais detidos como sujeitos.
 
-Recolhidos à prisão, ali permaneceram até serem julgados. Em novembro de 1799 terminava o julgamento com as seguintes sentenças: Luís Gonzaga das Virgens foi condenado a morrer na forca e ter os pés e mãos
-decepados e expostos em praça pública; João de Deus Nascimento, Lucas
-Dantas, Manuel Faustino dos Santos Lira também foram sentenciados à
-forca e esquartejamento, devendo ficar os seus corpos expostos em
-lugares públicos.
+Recolhidos à prisão, ali permaneceram até serem julgados. Em novembro
+de 1799 terminava o julgamento com as seguintes sentenças: Luís
+Gonzaga das Virgens foi condenado a morrer na forca e ter os pés e
+mãos decepados e expostos em praça pública; João de Deus Nascimento,
+Lucas Dantas, Manuel Faustino dos Santos Lira também foram
+sentenciados à forca e esquartejamento, devendo ficar os seus corpos
+expostos em lugares públicos.
 
 Igual sentença foi proferida contra Romão Pinheiro, com a agravante
 de serem os seus parentes considerados infames. Posteriormente a sua

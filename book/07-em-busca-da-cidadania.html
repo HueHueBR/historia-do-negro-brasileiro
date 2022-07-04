@@ -1,0 +1,699 @@
+<!DOCTYPE HTML>
+<html lang="pt-br" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Em busca da cidadania - História do Negro Brasileiro</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="00-informacoes.html">Folha de rosto</a></li><li class="chapter-item expanded affix "><a href="00.1-epigrafe.html">Epígrafe</a></li><li class="chapter-item expanded affix "><li class="part-title">História do Negro Brasileiro</li><li class="chapter-item expanded "><a href="01-o-grande-povoador.html"><strong aria-hidden="true">1.</strong> O grande povoador</a></li><li class="chapter-item expanded "><a href="02-o-negro-escravo-no-brasil-colonia.html"><strong aria-hidden="true">2.</strong> O negro escravo no Brasil-Colônia</a></li><li class="chapter-item expanded "><a href="03-a-quilombagem-como-agente-de-mudanca-social.html"><strong aria-hidden="true">3.</strong> A quilombagem como agente de mudança social</a></li><li class="chapter-item expanded "><a href="04-a-variavel-cultural.html"><strong aria-hidden="true">4.</strong> A variável cultural</a></li><li class="chapter-item expanded "><a href="05-o-negro-e-sua-participacao-politica.html"><strong aria-hidden="true">5.</strong> O negro e sua participação política</a></li><li class="chapter-item expanded "><a href="06-a-decadencia-da-escravidao-e-a-crise-do-sistema.html"><strong aria-hidden="true">6.</strong> A decadência da escravidão e a crise do sistema</a></li><li class="chapter-item expanded "><a href="07-em-busca-da-cidadania.html" class="active"><strong aria-hidden="true">7.</strong> Em busca da cidadania</a></li><li class="chapter-item expanded "><a href="08-vocabulario-critico.html"><strong aria-hidden="true">8.</strong> Vocabulário crítico</a></li><li class="chapter-item expanded "><a href="09-bibliografia-comentada.html"><strong aria-hidden="true">9.</strong> Bibliografia comentada</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">História do Negro Brasileiro</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="em-busca-da-cidadania"><a class="header" href="#em-busca-da-cidadania">Em busca da cidadania</a></h1>
+<blockquote>
+<p>Ser negro é os costumes dizerem que vais ter de conquistar os direitos que a constituição te garantia já.
+– TURNER BROWN JR.</p>
+</blockquote>
+<h2 id="as-festividades-iniciais-da-abolição"><a class="header" href="#as-festividades-iniciais-da-abolição">As festividades iniciais da Abolição</a></h2>
+<p>O dia 14 de maio foi festivo para grande parte dos escravos que
+saíram das senzalas. Durante a euforia predominante, supuseram que
+haviam conquistado a liberdade e que os caminhos da cidadania estavam
+abertos para eles. A princesa Isabel apssou a ser, para a sua
+maioria, o símbolo da redenção do cativeiro. Os ex-escravos tinham
+como certa a sua equiparação aos demais cidadãos do Império. Houve
+uma parcela de negros que criou o <em>isabelismo</em>, pensamento que
+reinvindicava a defesa da princesa regente por acreditarem que ela
+fosse a personalidade que os redimira da escravidão num ato de
+bondade pessoal.</p>
+<p>José do Patrocínio foi o mais fervoroso adept do <em>isabelismo</em>, e
+procurou aliciar libertos para defender a monarquia ameaçada pela
+onda republicana que crescera após a Abolição. Não satisfeito em
+beijar os pés da Redentora, José do Patrocínio inicia a
+arregimentação de ex-excravos, capoeiras e marginais de um modo
+geral, para fundar a <em>Guarda Negra</em>. Esse ajuntamento tinha como
+finalidade impedir a propaganda republicana, inclusive com a tarefa
+de dissolver comícios pela violência. Essa posição dos elemntos por
+José do Patrocínio deu muito trabalho às autoridades e impediu, em
+muitos casos, que os adversários da monarquia se manifestassem. Os
+seus membros conseguiram dissolver muitos comícios republicanos
+através da violência.</p>
+<p>A áspera estrada do negro pela conquista da cidadania começava.
+Julgando-se cidadão, pensando poder invocar os seus direitos, o
+egresso das senzalas teve uma grande decepção. A sua cidadania nada
+mais era do que um símbolo habilmente elaborado pelas classes
+dominantes para que os mecanismos repressivos tivessem possibilidades
+de elaborar uma estratégia capaz de colocá-lo emparedado num
+imobilismo social que dura até os nossos dias.</p>
+<p>Por tudo isto, a primeira tentativa de manifestar-se
+contestatoriamente foi de forma equivocada: Segundo registra a
+crônica da época, houve mesmo mortes em comícios republicanos pelas
+quais a <em>Guarda Negra</em> foi responsabilizada. Osvaldo Orico, biógrafo
+de José do Patrocínio, assim descreve a situação:</p>
+<blockquote>
+<p>Incompreensível por um lado, mas explicável por outro, essa
+famigerada <em>Guarda Negra</em> tivera um inspirador. Não fora outro
+senão José do Patrocínio. O fanatismo abrira-lhe na alma a ilusão
+desse recurso com que imaginava cercar de garantias o prestígio da
+Redentora de sua raça. Foi a gratidão que o moveu a provocar e a
+sugerir um movimento de solidariedade dos libertos para com a
+padroeira inesquecível. E, ao toque de reunir, acorreram de todo
+lado os antigos sentenciados do cativeiro, ansiosos de oferecer com
+a força material do peito aberto a flor do seu reconhecimento
+heróico. Os acontecimentos registrados na capital e no interior,
+durante a fase em que se fez sentir a influência da <em>Guarda Negra</em>
+e se apelou para a sua incontida violência, mostraram como fora
+infeliz a ideia de arregimentar no antigo holocausto das senzalas
+a força que deveria guardar o Trono. Inaugurou-se uma época de
+terror que deu à nação enormes prejuízos em dinheiro e em vidas.
+Onde quer que brilhasse a centelha da luz republicana, surgir aí o
+conflito das raças, desencadeado pela fúria dos libertos em louvor
+à <em>rainha</em>. E amiudaram-se os atentado e morticínios. Na rua do
+Passeio; em frente à Secretaria de Justiça; em dias de março de 89,
+durante a agitação popular que a frebre amarela e a falta de água
+provocaram, a <em>Guarda Negra</em> deixou indícios de sua lamentável
+influência. <sup class="footnote-reference"><a href="#20">1</a></sup></p>
+</blockquote>
+<p>Nas cidades de Campos e Lage do Murié, ainda segundo Osvaldo Orico, a
+<em>Guarda Negra</em> agiu com violência contra os republicanos:</p>
+<blockquote>
+<p>Na primeira localidade em uma reunião republicana que se processava
+pacificamente, massa enorme de policiais e liertos armados invadiu
+o edifício em que se realizava um banquete democrático, alarmou as
+senhoras, desrespeitou com ameaças a intervenção amistosa do
+pároco, que suplicava das janelas do templo ordem e clemência,
+disparou tiros, arremessou garrafas, espancou e feriu, tudo isto
+para levantar entre acompanhamentos bélicos vivas e saudações à
+<em>rainha</em>. Na segunda, a polícia, após uma série de distúrbios,
+prendeu no tronco um honrado cidadão por suspeita de ideiais
+republicanos. <sup class="footnote-reference"><a href="#21">2</a></sup></p>
+</blockquote>
+<p>A <em>Guarda Negra</em> era um movimento contraditório e confuso. Apoiava a
+monarquia porque os escravos conseguiram libertar-se do cativeiro
+através da magnanimidade da princesa Isabel. Via a Abolição como um
+ato de munificiência social praticado pela regente, sem analisar as
+estratégias ocultas nessa medida e as conseqüências negativas que a
+Abolição traria, feita da forma inconclusa como o foi.</p>
+<p>Por outro lado, deixaram de pressionar os republicanos, especialmente
+os mais democratas, como Silva Jardim, no sentido de radicalizar o
+seu programa, exigindo reformas sociais e econômicas estruturais,
+como a distribuição de terra aos ex-escravos. Foi, portanto, um
+movimento conjuntural e reacionário, e o próprio José do Patrocínio,
+ao ver proclamada a República, foi um dos primeiros a aderir ao novo
+regime. Com isto, a <em>Guarda Negra</em> se desarticulou completamente logo
+depois da proclamação da República, vindo a desaparecer sem maiores
+conseqüências.</p>
+<p>Nesse período de transição, os negros recém-saídos da escravidão
+passaram a se organizar de várias formas alternativas, especialmente
+em grupos de lazer, culturais ou esportivos. Por outro lado,
+levando-se em consideração a forma como a Abolição foi feita,
+descartando-os da participação naquelas reformas estruturais que as
+mudanças do momento estavam a exigir, as reminiscências do sistema
+escravista e da <em>Redentora</em> continuaram existindo como ideologia de
+apoio psicológico em diversos grupos negros de ex-escravos. Isto
+retardou ainda mais o processo, pois a <em>Guarda Negra</em> tinha uma
+ideologia de retrocesso, de volta ao passado e ao mesmo tempo utópica
+(monarquia sem escravidão), quando devia exigir medidas de avanço
+sociais radicais.</p>
+<h2 id="a-revolta-da-chibata"><a class="header" href="#a-revolta-da-chibata">A revolta da chibata</a></h2>
+<p>Uma das instituições na qual o comportamento escravista dos seus
+superiores mais se evidenciava era a Marinha de Guerra do Brasil. O
+uso do açoite como medida disciplinar continuou sendo aplicado nos
+marinheiros, como no tempo em que existia o pelourinho. Todos os
+marinheiros, na sua esmagadora maioria negros, continuavam a ser
+açoitados às vistas dos companheiros, por determinação da
+oficialidade branca.</p>
+<p>Os demais marujos eram obrigados a assistir à cena infamante no
+convés das belonaves. Com isto, criaram-se condições de revolta no
+seio da marujada. Os seus membros não aceitavam mais passivamente
+esse tipo de castigo. Chefiados por Francisco Dias, João Cândido e
+outros tripulantes do <em>Minas Gerais</em>, navio capitânia da esquadra,
+organizaram-se contra a situação humilhante de que eram vítimas. Nos
+outros navios a marujada também se organizava: o cabo Gregório
+conspirava no <em>São Paulo</em>, e no <em>Deodoro</em> havia o cabo André Avelino.</p>
+<p>Dia 22 de novembro de 1910. Final praticamente de mais um ano do
+início do governo marechal Hermes da Fonseca. A informação chega até
+o presidente: a esquadra se sublevara. O movimento que vinha sendo
+articulado pelos marinheiros foi antecipado em face da indignação dos
+marujos contra o espancamento de mais um companheiro. O marinheiro
+negro Marcelino recebeu 250 chibatadas aos olhos de toda a
+tripulação, formada no convés do <em>Minas Gerais</em>. Desmaiou, mas os
+açoites continuaram.</p>
+<p>Os marinheiros, tendo João Cândido como líder, resolveram sublevar-se
+imediatamente. Num golpe rápido, apoderaram-se dos principais navios
+da Marinha de Guerra brasileira e se aproximaram do Rio de Janeiro.
+Em seguida mandaram mensagem ao presidente da República e ao ministro
+da Marinha exigindo a extinção do uso da chibata.</p>
+<p>O governo ficou estarrecido. Supôs tratar-se de um golpe político das
+forças inimigas. O pânico apoderou-se de grande parte da população da
+cidade. Muitas pessoas fugiram. Somente em um dia correram 12
+composições especiais para Petrópolis, levando 3000 pessoas. Todos os
+navios fiéis ao governo ainda tentaram duelar com os revoltosos, mas
+foram logo silenciados. Com isto os marujos criaram um impasse
+institucional. De um lado a Marinha, que queria a punição dos
+amotinados, em conseqüência da morte de alguns oficiais da armada. Do
+outro lado, o governo e os políticos, que sabiam não ter forças para
+satisfazer essa exigência. Mesmo porque os marinheiros estavam
+militarmente muito mais fortes do que a Marinha de Guerra, pois
+comandavam, praticamente, a armada e tinham os canhões de suas
+belonaves apontados para a capital da República.</p>
+<p>Depois de muitas reuniões políticas, nas quais entrou, entre outros,
+Rui Barbosa, que condenou os &quot;abusos com os quais, na gloriosa época
+do abolicionismo, levantamos a indignação dos nossos compatriotas&quot;,
+foi aprovado um projeto de anistia para os amotinados. Com isto, os
+marinheiros desceram as bandeiras vermelhas dos mastros dos seus
+navios. Desaparecia, assim, o uso da chibata como norma de punição
+disciplinar na Marinha de Guerra do Brasil.</p>
+<p>As forças militares, não-conformadas com a solução política
+encontrada para a crise, apertam o cerco contra os marinheiros. João
+Cândido, sentindo o perigo, ainda tenta reunir o <em>Comitê Geral da
+Revolução</em>, inutilmente. Procuram Rui Barbosa e Severino Vieira, que
+defenderam a anistia em favor deles, mas sequer são recebidos por
+esses dois políticos. Unem-se, agora, civis e militares para
+desafrontar os &quot;bríos da Marinha de Guerra&quot; por eles atingidos.
+Finalmente vem um decreto pelo qual qualquer marinheiro podia ser
+sumariamente demitido. A anistia fora uma farsa para desarmá-los.</p>
+<p>São acusados de conspiradores, espalham boates de que haveria uma
+outra sublevação. Finalmente, afirmam que a guarnição da ilha das
+Cobras havia se sublevado. Pretexto para que a repressão se
+desencadeasse violentamente sobre os marinheiros negros. O presidente
+Hermes da Fonseca necessitava de um pretexto para decretar o estado
+de sítio, a fim de sufocar os movimentos democráticos que se
+organizavam. As oligarquias regionais tinham interesse em um governo
+<em>forte</em>. Os poucos sublevados daquela ilha propõem rendição
+incondicional, o que não é aceito. Segue-se uma verdadeira chacina. A
+ilha é bombardeada até ser arrasada. Estava restaurada a honra da
+Marinha.</p>
+<p>João Cândido e os seus companheiros de revolta são presos
+incomunicáveis, e o governo e a Marinha resolvem exterminar
+fisicamente os marinheiros. Embarca-os no navio <em>Satélite</em> rumo ao Amazonas.</p>
+<p>Os 66 marujos que se encontravam em  uma masmorra do Quartel do
+Exército e mais 31, que se encontravam no Quartel do 1o. Regimento de
+Infantaria, são embarcados junto com assassinos, ladrões e marginais
+para serem descarregados nas selvas amazônicas. Os marinheiros,
+porém, tinham destino diferente dos demais embarcados. Ao lado dos
+muitos nomes da lista entregue ao comandante do navio, havia uma
+cruz vermelha, feita a tinta, o que significava a sua sentença de
+morte. Esses marinheiros foram sendo parceladamente assassinados:
+fuzilados sumariamente e jogados ao mar.</p>
+<p>João Cândido, que não embarca no <em>Satélite</em>, juntamente com alguns
+companheiros foram recolhidos a uma masmorra na ilha das Cobras,
+onde viviam como animais.</p>
+<p>Dos 18 recolhidos ali, 16 morreram. Uns fuzilados sem julgamento,
+outros em conseqüência das péssimas condições em que viviam
+enclausurados. João Cândido enlouqueceu, sendo internado no Hospital
+dos Alienados. Tuberculoso e na miséria, consegue, contudo,
+restabelecer-se física e psicologicamente. Perseguido constantemente,
+morre como vendedor no Entreposto de Peixes da cidade do Rio de
+Janeiro, sem patente, sem aposentadoria e até sem nome, este herói
+que um dia foi chamado, com médito, de <em>Almirante Negro</em>.</p>
+<h2 id="uma-voz-independente-para-o-negro"><a class="header" href="#uma-voz-independente-para-o-negro">Uma voz independente para o negro</a></h2>
+<p>A revolta dos marinheiros de João Cândido termina, como vimos, em
+1911. Quatro anos depois tem início, em São Paulo, uma relevante
+manifestação de identidade étnica, das mais importantes para
+conhecermos a trajetória do negro brasileiro na luta pela sua
+cidadania. Referimo-nos à chamada <em>imprensa negra</em> paulista, cujo
+primeiro jornal intitula-se <em>O Menelick</em> e começa a circular em 1915.
+Fenômeno dos mais significativos para se analisar o comportamento e
+a ideologia desse segmento negro urbano, os jornais editados por
+negros paulistas sucedem-se até 1963, quando é fechado o <em>Correio
+d'Ébano</em>.</p>
+<p>Os negros paulistas, sentindo a necessidade de um movimento de
+identidade étnica, e enfrentando as barreiras de uma imprensa
+<em>branca</em> (Grande Imprensa) impermeável aos anseios e reivindicações
+da comunidade, recorreram à solução mais viável, que era fundar uma
+imprensa alternativa, na qual os seus desejos, as denúncias contra o
+racismo, bem como a sua vida associativa, cultural e social se
+refletissem.</p>
+<p>Conforme dissemos, o primeiro desses órgãos foi <em>O Menelick</em>, que
+conseguiu o grande prestígio na comunidade negra, difundindo aquilo
+que os seus redatores achavam mais interessante para a vida social e
+cultural dos negros. Após o primeiro, outros se sucederam na seguinte
+ordem: <em>A rua</em> e <em>O Xauter</em>, 1916; <em>O Alfinete</em>, 1918. <em>O
+Bandeirante</em>, 1919; <em>A Liberdade</em>, 1919; <em>A Sentinela</em>, 1920; <em>O
+Kosmos</em>, 1922; <em>O Getulino</em>, 1923; <em>O Clarim da Alvorada e Elite</em>,
+1924; <em>Auriverde</em>, <em>O Patrocício</em> e <em>O Progresso</em>, 1928; <em>Chibata</em>,
+1932; <em>A Evolução</em> e <em>A Voz da Raça</em>, 1933; <em>O Clarim</em>, <em>O Estímulo</em>,
+<em>A Raça</em> e <em>Tribuna Negra</em>, 1935; <em>A Alvorada</em>, 1936; <em>Senzala</em>,
+1946; <em>Mundo Novo</em>, 1950; <em>O Novo  Horizonte</em>, 1954; <em>Notícias de
+Ébano</em>, 1957; <em>O Mutirão</em>, 1958; <em>Hífen e Niger</em>, 1960; <em>Nosso
+Jornal</em>, 1961; e <em>Correio d'Ébano</em>, 1963.</p>
+<p>Esse conjunto de periódicos que se sucedem durante quase cinqüênta
+anos influirá significativamente na formação de uma ideologia étnica
+do negro paulista e irá influir, de certa maneira, no seu
+comportamento. Concentrando o seu noticiário nos acontecimentos da
+comunidade, divulgando a produção dos seus intelectuais nas páginas
+dessas publicações, aconselhando, orientando e criando, mesmo, um
+código de moral puritana para ser obedecido pelos negros, essa
+imprensa &quot;feita por negros para negros&quot; marcou profundamente o
+pensamento do negro paulista.</p>
+<p>Os seus sobreviventes, como José Correira Leite, Francisco Lucrécio e
+Aristides barbosa ainda rememoram com nostalgia esse período. Esses
+jornais, mantidos pelos próprios grupos que os editavam e alguns
+membros da comunidade que se cotizavam para ajudá-los, constituíram
+um fato único no Brasil. A obstinação desses grupos negros em
+manterem um espaço ideológico e informativo independente, bem como a
+sua consciência étnica, determinou a sua continuidade, embora
+intermitente. Por outro lado, esses jornais também serviram de
+veículo organizacional dos negros. As discussões que se travam nas
+suas páginas, a colocação permanente de problemas específicos da
+comunidade, as denúncias contra o racismo e a violência através de
+fatos concretos, tudo isso levou a que os negros de São Paulo
+fundassem o maior movimento político negro do Brasil: a <em>Frente
+Negra Brasileira</em>.</p>
+<p>Esses jornais, conforme já dissemos, não refletiam nas suas páginas
+os grandes acontecimentos nacionais. Nada sabemos, pela sua leitura,
+da Coluna Prestes, da revolução de 1930, do movimento de 1932 em São
+Paulo, da revolta comunista de 1935 e de outros acontecimentos
+relevantes nesse período. Há, mesmo, uma certa <em>cautela tática</em>, pois
+neles também não se encontram notícias ou comentários sobre o
+movimento sindical, as lutas operárias, greves e a participação dos
+negros nesses eventos. Também não se encontram críticas ao governo. É
+uma imprensa altamente setorizada nas suas informações e dirigida a
+um público específico.</p>
+<p>Os seus dois jornais mais importantes, <em>O Clarim da Alvorada</em> e <em>A
+Voz da Raça</em>, tiveram papel saliente e significativo no despertar da
+consciência étnica do negro paulista. O primeiro municiou a
+comunidade de dados e informações preciosos para que o negro se
+auto-identificasse na sua <em>negritude</em>. O segundo foi o órgão da
+<em>Frente Negra Brasileira</em>, morvimento que marcou profundamente a
+consciência do negro, não apenas em São Paulo mas também em outros
+Estados e elevou o nível de tomada da sua identidade étnica.</p>
+<h2 id="a-frente-negra-brasileira"><a class="header" href="#a-frente-negra-brasileira">A Frente Negra Brasileira</a></h2>
+<p>No bojo dessa movimentação ideológica da comunidade negra paulistana,
+através dos seus jornais, surge a idéia da formação da <em>Frente Negra
+Brasileira</em>. Ela irá constituir-se em um movimento de caráter
+nacional, com repercurssão internacional. Surgiu da obstinação de
+negros abnegados, como Francisco Lucrécio, Raul Joviano do Amaral,
+José Correia Leite (que, depois, dela se afastará por motivos
+ideológicos) e mais alguns.</p>
+<p>Fundada em 16 de setembro de 1931, a sua sede social central
+localizava-se na rua Liberdade, na capital paulista. Sua estrutura
+organizacional já era bastante complexa, muito mais do que a quase
+inexistente dos jornais. Era dirigida por um Grande Conselho,
+constituído de 20 membros, selecionando-se, dentre eles, o Chefe e o
+Secretário. Havia, ainda, um conselho Auxiliar, formado pelos Cabos
+Distritais da Capital.</p>
+<p>Criou-se, ainda, uma milícia frente-negrina, organização paramilitar.
+Os seus compomentes usavam camisas brancas e recebiam rígido
+tratamento, como se fossem soldados. Segundo um dos seus fundadores –
+Francisco Lucrécio –, a <em>Frente Negra</em> foi fundada por ele e outros
+companheiros embaixo de um poste de iluminação. Ainda segundo a mesma
+testemunha, no início houve muita incompreensão. Diziam que eles
+estavam fazendo racismo ao contrário. No entanto, com o tempo, os
+membros da <em>Frente Negra</em> foram adquirindo a confiança não apenas da
+comunidade, mas de toda a sociedade paulistana. As próprias
+autoridades a respeitavam. Os seus membros possuíam uma carteira de
+identidade expedida pela entidade, com retratos de frene e de perfil.
+Quando as autoridades policiais encontravam um negro com esse
+documento, respeitavam-no porque sabia que na <em>Frente Negra</em> só
+entravam pessoas de bem. Ainda segundo depoimento do Francisco
+Lucrécio, conseguiram acabar com a discriminação racial que existia
+na então Força Pública de São Paulo. Até aquela data os negros não
+poiam entrar na corporação. A <em>Frente Negra</em> inscreveu mais de 400
+negros, tendo muitos deles feito carreira militar. Por outro lado,
+havia divergências na comunidade negra em relação à ideologia da
+<em>Frente</em>, pois muitos não aceitavam a ideologia <em>patrianovista</em>
+(monarquista) que o seu primeiro presidente, Arlindo Veiga dos
+Santos, queria impor aos seus membros. Isso iria se refletir na
+trajetória da entidadde. Uma visão direitista levou muitos dos seus
+adeptos a posições simpáticas em relação ao integralismo e ao
+nazismo.</p>
+<p>Paradoxalmente, o conceito de <em>raça</em> é manipulado pelos
+frente-negrinos, que, no seu jornal <em>A Voz da Raça</em>, colocam como seu
+<em>slogan</em> &quot;Deu, Pátria, Raca e Família&quot;, que depois foi modificado.
+Era um <em>slogan</em> decalcado diretamente do &quot;Deus, Pátria e Família&quot;, da
+Ação Integralista. Apesar dessas contradições ideológicas, a <em>Frente
+Negra</em> se desenvolveu rapidamente, criando núcleos em vários Estados
+do Brasil. Milhares de negros, nas principais áreas do país, aderem
+ao seu ideário e passam a ser seus membros.</p>
+<p>Em face dos êxitos alcançados, a <em>Frente Negra</em> resolveu
+transformar-se em partido político. Tinha todas as condições exigidas
+pela Justiça Eleitoral da época, e entrou com pedido nesse sentido em
+1936. Sobre o assunto houve discussão entre membros do Tribunal, que
+chegaram a alegar uma tendência racista na <em>Frente</em>. Finalmente o seu
+registro foi concedido. Durou pouco, porém. Logo em seguida, 1937, o
+golpe de Estado deflagrado por Getúlio Vargas implantando o Estado
+Novo dissolverá todos os partidos, entre eles a <em>Frente Negra
+Brasileira</em>.</p>
+<p>Houve um trauma muito grande na comunidade que a acompanhava ou
+militava nos seus quadros. Milhares de negros sentiram-se
+desarvorados politicamente. Um dos seus fundadores, Raul Joviano do
+Amaral, tenta conservar a entidade, mudando-lhe o nome para <em>União
+Negra Brasileira</em>. Mas a situação do país não era favorável à vida
+associativa no Brasil, onde a repressão via atos subversivos em
+qualquer organização. O jornal <em>A Voz da Raça</em> deixa de circular. A
+censura é imposta a todos os órgãos de imprensa, e a <em>União</em>, que
+procurou substituir a <em>Frente</em>, morre melancolicamente, em 1938,
+exatamente quando se comemoravam 50 anos da Abolição.</p>
+<h2 id="nova-articulação"><a class="header" href="#nova-articulação">Nova articulação</a></h2>
+<p>O interregno do Estado Novo inibiu a comunidade negra nacionalmente
+do ponto de vista organizacional e ideológico. Da mesma forma como as
+entidades populares e democráticas, sindicatos, associações culturais
+e outras ficaram sob vigilância permanente dos órgãos de segurança e
+repressão, as organizações negras recuaram diante da situação.
+Passaram a se organizar, como simples, clubes de lazer, especialmente
+dançantes ou esportivos. Somente com a redemocratização, com a
+vitória dos Aliados e a derrota do nazismo, o negro começa a
+organizar-se outra vez de forma significativa.</p>
+<p>Assim, em 1945 foi fundado, no Rio de Janeiro, o Comitê Democrático
+Afro-Brasileiro, o qual tinha como objetivos principais a convocação
+de uma Assembléia Constituinte; anistia ampla e incondicional para os
+crimes políticos e conexos; extinção do Tribunal de Segurança
+Nacional; intensificação do esforço de guerra; liberdade de palavra
+escrita e falada; liberdade de agremiação; direito de voto aos
+membros das Forças Armadas sem distinção de postos e direito a sua
+participação na Assembléia Constituinte; direito de voto nos navios
+mercantes; reconhecimento do direito de greve; atamento de relações
+diplomáticas com a URSS; autonomia sindical; direito de
+sindicalização para o trabalhador das organizações autárquicas;
+assistência ao trabalhador rural; direito de sindicalização para as
+empregadas domésticas; liberdade de culto às religiões
+afro-brasileiras; ensino gratuito; punição às empresas que fazem
+seleção racial e de cor; aboliçnao das seleções raciais e de cor na
+diplomacia; aboliçnao da seleção de cor nas escolas militares;
+participação do negro nos assuntos de colonização e imigração;
+democratização de todas as organizações negras, aproximando-as das
+organizações dos brancos; fazer a aproximação das escolas de samba,
+clubes dançantes, associações esportivas, sociedades beneficientes,
+organizações religiosas, livrando-as da exploração política e
+comercial; e criar escolas de alfabetização em todo o território
+nacional.</p>
+<p>O Comitê propunha, ainda, a realização de um Congresso Popular
+Brasileiro, colaborar com o Congresso de Artistas Plásticos e também,
+entre oturas coisas, o início de uma campanha para a construção de um
+monumento a José do Patrocínio.</p>
+<p>Nessa mesma conjuntura de redemocratização surge, em 1944, o Teatro
+Experimental do Negro, no Rio de Janeiro, liderado por Abdias do
+Nascimento. Ensaiou e apresentou peças, dinamizou a consciência da
+<em>negritude</em> brasileira e editou um jornal, <em>Quilombo</em>, no qual o
+pensamento do grupo e a proposta do TEN se apresentavam à opinião
+pública.</p>
+<p>O TEN teve de experimentar grandes dificuldades, quer financeiras,
+quer ideológicas, suspendendo as suas atividades no palco, mas sempre
+procurando levantar o problema do negro. Nesse sentido, o TEN
+organizou o Instituto Nacional do Negro e ao mesmo tempo procurou
+imprimir às suas atividades um conteúdo de elite cultural negra. Sob
+sua influência foi convocada a Conferência Nacional do Negro, em
+1949. Desse encontro participaram Edison Carneiro, Guerreiro Ramos e
+outros intelectuais negros e brancos. Depois de mais algumas
+atividades sociais e artísticas menores, o TEN irá se desarticulando.
+A situação do TEN marcou significativamente sua presença, divulgando
+a ideologia da <em>negritude</em>, especialmente entre a classe média negra
+carioca.</p>
+<p>Por essa mesma época o poeta Solano Trindade, que vinha já de
+atividades anteriores como fundador, em 1936, de um Centro de
+Cultura Afro-Brasileira, antigo participante da <em>Frente Negra
+Brasileira</em> em Pernambuco e criador de um grupo de arte popular no
+Rio Grande do Sul, procura fundar, no Rio de Janeiro, em 1945, o
+Teatro do Povo. essa sua idéia não teve êxito em conseqüência de
+dificuldades financeiras e ideológicas que surgiram.</p>
+<p>Reúne-se a Haroldo Costa em 1948 para formarem o Teatro Folclórico
+Brasileiro, dele no entanto se afastando quando o empresário Askanasi
+transformou-o em uma empresa meramente comercial. Ainda no sentido de
+organizar o negro culturalmente, fundou juntamente com Edison
+Carneiro e Dirceu de Oliveira o Teatro Popular Brasileiro, composto
+de artífices, operários de fábricas, domésticas e pessoas de outras
+camadas populares. Com esse grupo viajou ao exterior, obtendo êxito
+em várias capitais européias. O Teatro Popular, no entanto,
+dispersou-se logo após seu regresso.</p>
+<p>Solano Trindade, em São Paulo, tenta reorganizá-lo, continuando com
+exibições esporádicas até a sua morte.</p>
+<p>Por outro lado, não devemos nos esquecer das organizações negras que
+se articularam durante muito tempo e continuamente, atravessando os
+períodos de crise aguda da sociedade brasileira. No interior de São
+Paulo, especialmente, essas entidades funcionaram em solução de
+continuidade durante muitos anos e existem até hoje em número
+calculado em mais de cem. Temos como exemplos as que funcionam como
+clubes de lazer nas cidades de Campinas, Sorocaba, Piracicaba, São
+Carlos, Jundiaí, Araraquara, Catanduva e em outras cidades, muitas
+delas fundadas há mais de trinta e até cinqüênta anos.</p>
+<h2 id="renascimento-negro"><a class="header" href="#renascimento-negro">Renascimento negro</a></h2>
+<p>Mas, na capital de São Paulo, no Rio de Janeiro e em outras capitais,
+somente depois de 1954 há um renascimento negro que enseja a
+possibilidade de se organizarem entidades negras significativas.</p>
+<p>Em São Paulo, em dezembro de 1954 foi organizada a Associação
+Cultural do Negro, que passou a funcionar, inicialmente, numa sala da rua São Bento. O seu presidente era Geraldo Campos de Oliveira; o
+seu vice-presidente, Américo Orlando da Costa. Sua direção era
+composta de uma Diretoria Executiva, com oito membros, e um Conselho
+Superior, presidido por José Correia Leite (um veterano líder,
+fundador do <em>Clarim da Alvorada</em>), e tendo como secretário Américo
+dos Santos. O seu Conselho compunha-se de 29 membros. A ACN possuía
+departamentos de Cultura, Esporte, Estudantil, Feminino, e uma
+Comissão de Recreação. Geraldo Campos de Oliveira dinamizou as
+atividades da associação e editou um <em>Caderno de Cultura Negra</em>. Em
+1958 a entidade centrou as suas atividades no registro dos 70 anos da
+Aboliçnao. A ela juntaram-se para realizar esses atos, o Teatro
+Experimental do Negro (de São Paulo); o Teatro Popular Brasileiro, de
+Solano Trindade; a Associação Paulista dos Amigos do Homem do Norte e
+do Nordeste; o Grêmio Estudantil Castro Alves; a Sociedade Recreativa
+José do Patrocínio de São Miguel; e o Fidalgo Clube.</p>
+<p>Discutiu-se, na época, qual deveria ser a ideologia que o negro devia
+adotar para a sua libertação étnica, desdobrando-se esse debate em
+diversos nívels, que iam do cultural ao político. Esse aspecto de
+poliemica ideológica vai desaparecendo especialmente a partir do
+golpe militar de 1964.</p>
+<p>A ACN, depois de algum tempo inativa, muda-se, em 13 de maio de 1977,
+para o bairro da Casa Verde, com objetivos mais assistenciais e
+filantrópicos do que de reivindicação ideológica. Criou uma escola,
+com cursos de alfabetização e madureza que funcionavam gratuitamente.</p>
+<p>Apesar de tudo isto, a Associação Cultural do Negro não tem mais o
+seu <em>ethos</em> inicial, tendo de fechar as suas portas.</p>
+<p>Devemos salientar, também, o funcionamento das escolas de samba que
+serviam e servem de veículos de organização cultural do negro,
+centenas de pequenos clubes, recreativos ou com outras finalidades,
+espalhados em todo o território nacional, além de terreiros de
+Candomblé, Xangô, Macumba e Umbanda, que servem também para agrupar
+o negro brasileiro. Uma verdadeira teia nacional desses grupos
+mantém o negro unido e cria condições para a preservação da sua
+memória afro-brasileira.</p>
+<p>Por outro lado, a situação do Brasil durante o golpe militar que foi
+instaurado no país impossibilitou qualquer diálogo democrático entre
+esses grupos negros e as autoridades autoritárias que semper os viram
+como desconfiança, acreditando serem pontos de subversão.</p>
+<p>Em consequência da saída dos militares do poder, fundam-se
+organizações mais estruturadas, que retomam a tradição de uma
+posição de luta étnica e cultural. Essas organizações articulam-se e
+promovem uma série de atividades culturais, sociais e recreativas,
+tomando, de vez em quando, posições abertas contra o preconceito
+racial. A unificação dessas organizações deu-se, finalmente, a partir
+do dia 18 de junho de 1978, quando da realização de um ato público de
+protesto nas escadarias do Teatro Municipal de São Paulo. Os fatos
+que determinaram a sua convocação foram a morte do trabalhador negro
+Róbson Silveira da Luz, no mês de maio, devido a torturas em uma
+delegacia de Guaianases, na capital de São Paulo; a expulsão, no mês
+de maio, de quatro atletas juvenis negros do Clube de Regatas Tietê;
+e, finalmente, o assassinato por um policial, no bairro paulistano da
+Lapa, de Nilto Lourenço, operário negro.</p>
+<p>Durante esse ato foi criado o <em>Movimento Negro Unificado Contra a
+Discriminação Racial</em>, depois abreviado para <em>Movimento Negro
+Unificado</em>.</p>
+<p>A partir daí várias outras organizações de militantes surgiram no
+Brasil inteiro e atualmente reivindicam o fim do racismo e da
+exploração econômica, social e cultural do negro. Mas esta é uma
+história que ainda está sendo vivida, para depois ser contada.</p>
+<div class="footnote-definition" id="20"><sup class="footnote-definition-label">1</sup>
+<p>ORICO, Osvaldo. <em>O Tigre da Abolição</em>. São Paulo, Nacional, 1931, p. 190.</p>
+</div>
+<div class="footnote-definition" id="21"><sup class="footnote-definition-label">2</sup>
+<p>Idem, ibidem, p. 191.</p>
+</div>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="06-a-decadencia-da-escravidao-e-a-crise-do-sistema.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="08-vocabulario-critico.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="06-a-decadencia-da-escravidao-e-a-crise-do-sistema.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="08-vocabulario-critico.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>

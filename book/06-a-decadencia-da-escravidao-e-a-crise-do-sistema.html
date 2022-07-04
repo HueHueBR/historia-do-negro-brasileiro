@@ -1,0 +1,482 @@
+<!DOCTYPE HTML>
+<html lang="pt-br" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>A decadência da escravidão e a crise do sistema - História do Negro Brasileiro</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="00-informacoes.html">Folha de rosto</a></li><li class="chapter-item expanded affix "><a href="00.1-epigrafe.html">Epígrafe</a></li><li class="chapter-item expanded affix "><li class="part-title">História do Negro Brasileiro</li><li class="chapter-item expanded "><a href="01-o-grande-povoador.html"><strong aria-hidden="true">1.</strong> O grande povoador</a></li><li class="chapter-item expanded "><a href="02-o-negro-escravo-no-brasil-colonia.html"><strong aria-hidden="true">2.</strong> O negro escravo no Brasil-Colônia</a></li><li class="chapter-item expanded "><a href="03-a-quilombagem-como-agente-de-mudanca-social.html"><strong aria-hidden="true">3.</strong> A quilombagem como agente de mudança social</a></li><li class="chapter-item expanded "><a href="04-a-variavel-cultural.html"><strong aria-hidden="true">4.</strong> A variável cultural</a></li><li class="chapter-item expanded "><a href="05-o-negro-e-sua-participacao-politica.html"><strong aria-hidden="true">5.</strong> O negro e sua participação política</a></li><li class="chapter-item expanded "><a href="06-a-decadencia-da-escravidao-e-a-crise-do-sistema.html" class="active"><strong aria-hidden="true">6.</strong> A decadência da escravidão e a crise do sistema</a></li><li class="chapter-item expanded "><a href="07-em-busca-da-cidadania.html"><strong aria-hidden="true">7.</strong> Em busca da cidadania</a></li><li class="chapter-item expanded "><a href="08-vocabulario-critico.html"><strong aria-hidden="true">8.</strong> Vocabulário crítico</a></li><li class="chapter-item expanded "><a href="09-bibliografia-comentada.html"><strong aria-hidden="true">9.</strong> Bibliografia comentada</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">História do Negro Brasileiro</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="a-decadência-da-escravidão-e-a-crise-do-sistema"><a class="header" href="#a-decadência-da-escravidão-e-a-crise-do-sistema">A decadência da escravidão e a crise do sistema</a></h1>
+<p>No ano de 1850 é extindo o tráfico de escravos da África para o
+Brasil. Esse fato marcará profundamente os destinos da escravidão.
+Com tal medida restritiva a população negro-africana deixa de entrar,
+através dos vários portos de desembarque, como componente demográfico
+no território brasileiro. Levando-se em conta, como já vimos, que a
+média de vida útil do escravo era de 7 a 10 anos, podemos ver
+facilmente que a população negra tende a decrescer, pois ela não
+podia recompor-se e alcançar índices de natalidade capazes de repor o
+número de escravos que morriam.</p>
+<p>Inicia-se, assim, a crise do sistema escravista. A essa causa
+demográfica juntavam-se outras igualmente importantes. O açúcar,
+mercadoria de exportação que dera prosperidade à área de trabalho
+escravo no Nordeste, entrara em decadência no mercado mundial. O
+mesmo fenômeno de decadência também se manifestara em Minas Gerais e
+Goiás, pois a avidez da metrópole exaurira em menos de dois séculos
+quase toda a riqueza do subsolo daquela área. Grande parte da
+população escrava, por seu turno, continuava a sua trajetória de
+rebeldia. A fuga permanente do escravo que exigia a manutenção de um
+aparelho repressivo e de captura permanente também onerava o custo de
+produção.</p>
+<p>Por outro lado, na segunda metade do século XIX uma nova cultura
+aparece no Sudeste com um dinamismo que surpreende e, ao mesmo tempo,
+exige uma quantidade cada vez maior de mão-de-obra: o café. Não
+havendo a possibilidade de importação de africanos, os fazendeiros do
+café Rio de Janeiro, São Paulo e Minas no início do surto usam o
+recurso de importar o negro escravo de outras províncias que já se
+encontravam decadentes, como Pernambuco, Bahia e Ceará.</p>
+<p>Essa necessidade de importação interprovincial desarticula novamente
+a população negra, que é deslocada para as novas áreas prósperas,
+muitas vezes vendo fragmentada a sua família, pois os seus membros
+podiam ser vendidos para senhores diferentes.</p>
+<p>Esse novo deslocamento da população negra escrava estava, por isto,
+subordinado aos senhores. Escreve neste sentido Emília Viotti da
+Costa:</p>
+<blockquote>
+<p>Foi o café o grande responsável pelo aumento do número de escravos
+e pela modificação das estatísticas. São Paulo passará com o Rio e
+Minas a deter, em 1887, 50% da população escrava do país. Os
+lavradores que avançavam pelo interior do vale fluminense e se
+fixavam nas terras paulistas e mineiras não encontravam outra
+solução para o problema da mão-de-obra. <sup class="footnote-reference"><a href="#16">1</a></sup></p>
+</blockquote>
+<p>Durante o sistema do Brasil-Colônia, a escravidão se estruturava em
+toda a sua plenitude. De um lado, a população escrava aumentava a
+baixo preço através do tráfico, e, de outro, a produção para
+exportação praticamente não tinha concorrência no mercado mundial.
+Havia uma concordância de fatores positivos. O negro não apenas
+trabalhava, mas era mercadoria que podia ser vendida a qualquer
+momento, muitas vezes com lucro compensador. A reposição da <em>peça</em>
+que morria era feita quase sem ônus para o senhor em face do seu
+baixo preço.</p>
+<p>Agora, não. O senhor na economia cafeeira tinha de enfrentar um novo
+universo. O escravo já não era mais aquela mercadoria barata e
+facilmente substituível, mas, pelo contrário, devia ser protegida,
+pois a sua inutilização iria onerar o custo da produção. O imigrante,
+cuja presença se fará sentir, não tinha aptidão para o tipo de
+trabalho como ele era praticado nas fazendas cafeeiras. Ademais, era
+muito mais caro que o escravo, mesmo este tendo sido revalorizado
+como mercadoria, apéos a abolição do tráfico. Desse conjunto de
+circunstâncias surge uma realidade nova: de um lado aumenta a demanda
+internacional pelo café e, de outro, aumenta o preço do escravo
+internamente. Isto levará a que alguns segmentos, mercantis ou com
+capitais paralisados com a extinção do tráfico, se organizem no
+sentido de suprir a procura de braços. Mas, como esses segmentos
+visavam a uma taxa de lucro elevada e altamente compensadora, não
+irão recrutar o trabalhador nacional não-branco e em particular o
+trabalhador negro. Essa mão-de-obra é descartada já antes da
+Abolição, e se cria o mito da superioridade do trabalho branco
+importado que traria, consigo, os elementos culturais capazes de
+civilizar o Brasil. Mas, enquanto essa campanha imigrantista não
+conseguia estruturar-se definitivamente, o preço do negro escravo
+aumentava no mercado.</p>
+<h2 id="de-perseguido-a-protegido"><a class="header" href="#de-perseguido-a-protegido">De perseguido a <em>protegido</em></a></h2>
+<p>Em conseqüência, o capital investido no negro devia ser protegido, e
+surgem as primeiras leis <em>protetoras</em>. Se antes, conforme já vimos,
+as leis contra o escravo eram quase toads despóticas e terroristas,
+nessa fase da escravidão ele passa a ser <em>protegido</em>. A Lei do
+Sexagenários, a do Ventre-Livre, a extinção da pena de açoite, a
+proibição de se venderem para senhores membros da mesma família
+escrava e outras são mecanismos que protegem mais a propriedade do
+senhor do que a pessoa do negro escravo. A Lei do Sexagenários, por
+exemplo, serviu para descartar a população escrava não produtiva, que
+apenas existia como sucata e dava despesas aos seus senhores. A Lei
+do Ventre-Livre condicionava praticamente o ingênuo a viver até os
+vinte anos numa escravidão disfarçada trabalhando para o senhor.</p>
+<p>A crise do sistema escravista entrava em sua última fase. Do ponto de
+vista estritamente econômico, capitais de nações européias mais
+desenvolvidas no sistema capitalista investiam nos ramos
+fundamentais, como transportes, iluminação, portos e bancos, criando
+uma contradição que irá aguçando-se progressivamente entre o trabalho
+livre e o escravo. Tudo isso irá culminar com a Guerra do Paraguai,
+na qual os negros serão envolvidos na sua grande maioria
+compulsoriamente, nela morrendo cerca de 90000. Aqueles que fugiram
+ao cativeiro, apresentando-se como voluntários, acreditando na
+promessa imperial de libertá-los após o conflito, foram muitos deles
+reescravizados.</p>
+<p>Essa grande sucção de mão-de-obra negra, provocada pela Guerra do
+Paraguai, abriu espaços ainda maiores para que o imigrante fosse
+aproveitado como trabalhador. Essa tática de enviar negros à guerra
+serviu, de um lado, para <em>branquear</em> a população brasileira e, de
+outro, para justificar a poplítica imigrantista que era patrocinada
+por parcelas significativas do  capitalismo nativo e pelo governo de
+D. Pedro II.</p>
+<p>Nessa fase poderemos ver duas tendências demográficas da população
+negra, escrava ou livre: a) decréscimo numério em conseqüência da
+guerra e do envelhecimento e falecimento de grande parte dos seus
+membros; b) concentração dessa população nas províncias de Minas,
+Rio de Janeiro e São Paulo.</p>
+<p>Nas demais províncias vemos uma economia estagnada, com uma população
+negra incorporando-se aos tipos regionais de exploração camponesa,
+pois os senhores não tinham excedentes monetários para investir na
+dinamização dessa economia decadente. O negro é, assim, naquelas
+áreas, incorporado, conforme já analisamos antes, a uma economia de
+miséria. <sup class="footnote-reference"><a href="#17">2</a></sup></p>
+<h2 id="decomposição-do-sistema-e-comportamento-senhorial"><a class="header" href="#decomposição-do-sistema-e-comportamento-senhorial">Decomposição do sistema e comportamento senhorial</a></h2>
+<p>Dessa forma, na passagem da crise para decomposição do sistema
+escravista, temos duas vertentes econômicas e de comprotamento dos
+senhores. A primeira era a dos que habitavam a região decadente e
+estagnada do Nordeste e Norte, com uma economia sem possibilidades de
+recuperar-se nem mesmo a longo prazo, uma população escrava que mais
+onerava que produzia e uma população de negros livres participantes
+de uma economia camponesa de escassa rentabilidade, com culturas
+alternativas ou de subsistência. A segunda era a tendência dos
+fazendeiros de café de parte de Minas, do Vale do Paraíba e outras
+áreas de São Paulo e Rio de Janeiro, que entravam agressivamente no
+mercado mundial com a defasagem de produzir essa mercadoria ainda
+através do trabalho escravo, o que era um anacronismo.</p>
+<p>Tudo isso levava a que se pensasse em outro tipo de organização do
+trabalho.</p>
+<p>No Brasil, ao se pensar em novo tipo de organização do trabalho, por
+mecanismos ideológicos elitistas, pensava-se, também, em outro tipo
+de trabalhador. E aqui se cruzam os preconceitos racistas das nossas
+elites com os interesses mercantis daqueles segmentos da burguesia
+nativa que se organizaram e investiram para explorar a empresa
+imigrantista.</p>
+<p>Essas razões que configuram a crise estrutural do escravismo fizeram
+com que, a partir de 1871, o movimento abolicionista se organizasse
+em pequenos grupos de boêmios e intelectuais influenciados por idéias
+liberais mais radicais. Nabuco, registrando o início desse movimento,
+escreve que</p>
+<blockquote>
+<p>Não há muito se fala no Brasil em abolicionismo e Partido
+Abolicionista. A idéia de suprimir a escravidão, libertando os
+escravos existentes, sucedeu à ideia de suprimir a escravidão,
+entregando-lhe o milhão e meio de homens que ela se achava de posse
+em 1871 e deixando-a acabar com eles. Foi na legislatura de 1879/80
+que, pela primeira vez, se viu dentro e fora do Parlamento um grupo
+de homens fazer da <em>emancipação dos escravos</em>, não da limitação do
+cativeiro às gerações atuais, a sua bandeira política, a condição
+preliminar dos partidos.</p>
+<p>A história das posições que a Escravidão encontrara até então pode
+ser resumida em poucas palavras. No período anterior à
+Independência e nos primeiros anos subseqüêntes, houve, na geração
+trabalhada pelas idéias liberais do começo do século, um certo
+desassossego de consciência pela necessidade em que ela se viu de
+realizar a emancipação nacional, deixando grande parte da população
+em cativeiro pessoal. Os acontecimentos políticos, porém,
+absorveram a atenção do povo, e, com a revolução de 7 de abril de
+1831, começou o período de excitação que durou até a Maioridade.
+Foi somente no Segundo Reinado que o progresso dos costumes
+públicos tornou possível a primeira resistência séria à
+Escravidão. <sup class="footnote-reference"><a href="#18">3</a></sup></p>
+</blockquote>
+<p>Somente quando o escravismo entra em crise estrutural, crise que tem
+início com a extinção do tráfico, começa-se a pensar de forma difusa,
+esporádica e utópica na idéia da emancipação dos escravos. Mas,
+somente depois de 1880, segundo o próprio Nabuco, é que o
+abolicionismo aparece como um movimento que apresenta uma proposta
+<em>política</em>. Como vemos, a dinâmica radical anterior a esse movimento
+contra a escravidão partiu dos próprios escravos, através da
+quilombagem.</p>
+<p>Nessas circunstâncias o povo, especialmente os grupos residentes nas
+áreas urbanas, acoitava os escravos fugidos. As leis contra esses
+atos não eram mais aplicadas. Em 1883, funda-se a <em>Confederação
+Abolicionista</em>, que atuará nacionalmente. O Clube Militar, em 1887,
+através do seu presidente, mostra as desvantagens de o Exército caçar
+negros fugidos, como queria o governo imperial. Diz a carta enviada
+ao então ministro da Guerra Manuel Antônio da Fonseca da Costa:</p>
+<blockquote>
+<p>Il.mo Ex.mo Marechal do Exército Visconde da Gávea. Não é tanto
+pela voz da caridade, da humanidade, da justiça, e da razão que o
+Clube Militar, de que sou órgão, dá esse passo. Não é tanto pela
+redenção dos cativos que, hoje, opor barreiras à forte corrente
+abolicionista é imprudência, hoje que se faz ouvir a voz da Igreja
+de Cristo, hoje que os supremos ministros de Deus-homem, de Deus da
+caridade, afinal, falam o que há muito deviam clamar.</p>
+<p>Não é tanto pela injustiça clamorosa do morticínio decretado a
+homens que buscam a liberdade sem combates nem represálias; é pelo
+papel menos decoroso, menos digno que se quer dar ao Exército.</p>
+<p>O Exército é para a guerra leal, na defesa do Trono e da Pátria,
+para outros afazeres que necessitam força armada há a polícia, que
+alistou-se para esse fim.</p>
+<p>A V. Ex.a, pois, venho pedir que se digne dar andamento ao
+requerimento junto que tenho a honra de passar às mãos de V. Ex.a,
+porquanto o serviço – pegar negros fugidos – pelo Exército, se para
+uns é fácil e agradável, para outros é repugnante e pode tornar-se
+improfícuo; neste segundo caso, cuja verdade é o não-cumprimento de
+ordens, embora salvas as aparências, há prejuízos, perda da força
+moral e inconveniência à disciplina, conquanto seja a falta
+cometida de difícil, senão impossível prova.</p>
+<p>O serviço – pegar negros fugidos – é congênere, em tudo e por tudo,
+ao antigo – captura de negros novos – em que também não havia
+cumprimento de ordens. sendo a diferença única essa de que então as
+ordens eram dadas no sentido de se falhar a diligência, e o
+resultado quase sempre era o contrário, fazia-se a captura; hoje
+quer-se a captura, e o resultado será a falha.</p>
+<p>Dir-se-á que nada temos com isso; é um engano, porque somos
+soldados e vemos as mesmas inconveniências disciplinares e
+perseguições como as que se davam antigamente, quer em relação ao
+não-cumprimento de ordem, quer sobre a ação contra o oficial que
+fazia a captura desejada.</p>
+<p>V. Ex.a tenha paciência e aceite o requerimento, onde aproveito a
+ocasião para patentear a adesão e fidelidade ao nosso bom Imperador
+e à sua dinastia, que somente conosco, com o Exército e Armada,
+pode e deve contar. De V. Ex.a at. amigo e camarada muito grato –
+Marechal-de-Campo Manuel Deodoro da Fonseca – Rio de Janeiro, 25 de
+outubro de 1887.</p>
+</blockquote>
+<p>Como vemos, foi o Clube Militar, uma sociedade civil de militares,
+quem recusou o papel de capitão-do-mato, e não o Exército como
+instituição.</p>
+<p>Por outro lado, somando-se a esses fatores, na última fase da
+escravidão, a simples fuga passiva dos escravos já era suficiente
+para desestabilizar o sistema ou condicionar psicologicamente os
+membros da classe senhorial e outras camadas sociais em
+desenvolvimento. Na fase do que chamamos <em>escravismo tardio</em>, a
+insegurança na compra de escravos e a pouca rentabilidade do seu
+trabalho eram suficientes para que os investidores transferissem seus
+capitais para a especulação. Nesse sentido, escreve Vicente Licínio
+Cardoso:</p>
+<blockquote>
+<p>Em 1884, em pleno Parlamento, uma confissão gravíssima de Andrade
+Figueira, traduzindo o abalo das fugas dos escravos em grandes
+massas, bem diria o perigo do momento: &quot;O povo já perdeu a
+confiança na única indústria que alimenta a nossa riqueza, a
+indústria agrícola. Os capitais só procuram emprego em apólices,
+não enxergando segurança em outra  parte&quot;. <sup class="footnote-reference"><a href="#19">4</a></sup></p>
+</blockquote>
+<p>O papel da quilombagem, mesmo na fase do capitalismo tardio, quadno
+era apenas passiva, conseguia influir na aplicação de capitais, pois
+a <em>síndrome do medo</em> inibia esses especuladores que passam a procurar
+outros ramos mais favoráveis e seguros de investimento.</p>
+<p>Além dessas causas estruturais, fatores externos levam o sistema
+escravista a um impasse cuja solução foi a Abolição sem reformas. O
+dilema se apresentava diante dos fazendeiros: ou aceitavam a Abolição
+compromissada como o Trono queria, conservando-lhes os privilégios,
+ou correriam o risco de ver a Abolição feita pelos próprios escravos,
+através de medidas radicais, como a divisão das terras senhoriais. A
+concordata foi feita. O problema da mão-de-obra já estava
+praticamente resolvido com a importação de milhares de imigrantes. O
+trabalhador nacional descendente de africanos seria marginalizado e
+estigmatizado. O idela de <em>branqueamento</em> das elites seria
+satisfeito, e as estruturas arcaicas de propriedade continuariam
+intocadas.</p>
+<p>O negro, ex-escravo, é atirado como sobra na periferia do sistema de
+trabalho livre, o racismo é remanipulado criando mecanismos de
+barragem para o negro em todos os níveis da sociedade, e o modelo de
+capitalismo dependente é implantado, perdurando até hoje.</p>
+<div class="footnote-definition" id="16"><sup class="footnote-definition-label">1</sup>
+<p>VIOTTI DA COSTA, Emília. <em>Da senzala à Colônia</em>. São Paulo, Difusão Européia do Livro, 1966, p. 26.</p>
+</div>
+<div class="footnote-definition" id="17"><sup class="footnote-definition-label">2</sup>
+<p>Confrontar: MOURA, Clóvis. <em>O negro; de bom escravo a mau cidadão?</em> Rio de Janeiro, Conquista, 1977, passim.</p>
+</div>
+<div class="footnote-definition" id="18"><sup class="footnote-definition-label">3</sup>
+<p>NABUCO, Joaquim. Op. cit., p. 12.</p>
+</div>
+<div class="footnote-definition" id="19"><sup class="footnote-definition-label">4</sup>
+<p>CARDOSO, Vicente Licínio. <em>À margem da história do Brasil</em>. 2. ed. São Paulo, Nacional, 1938, p. 155-6.</p>
+</div>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="05-o-negro-e-sua-participacao-politica.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="07-em-busca-da-cidadania.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="05-o-negro-e-sua-participacao-politica.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="07-em-busca-da-cidadania.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>

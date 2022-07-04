@@ -1,6 +1,5 @@
 # História do Negro Brasileiro
 
-
 Série: PrincipioS
 
 Autor: Clóvis Moura, professor do Ensino Superior e Jornalista
@@ -39,10 +38,4 @@ Aristeu Escobar
 Ary Normanha
 
 Antonio Ubirajara Domiencio
-
----
-
-> A nossa civilização vem da costa d'África.
->
-> – BERNARDO DE VASCONCELOS
 
